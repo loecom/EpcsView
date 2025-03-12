@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.lchb.epcsview.MainActivity$PlaceholderFragment" >
+
+    	<LinearLayout
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent"
+    	    android:background="#000000"
+    	    android:orientation="vertical" >
+
+    		<LinearLayout
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="fill_parent"
+    		    android:layout_marginTop="1dp"
+    		    android:layout_weight="2.9"
+    		    android:background="#FFFFFF"
+    		    android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/epcsviewdownload" />
+            </LinearLayout>
+		
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="2"
+		    android:background="#FFFFFF"
+		    android:orientation="vertical" >
+
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:gravity="center"
+			    android:text="EpcsView for Android"
+			    android:textSize="18dp" />
+
+			<TextView
+		    	android:id="@+id/txtVersion"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:gravity="center"
+			    android:text="版本号：V1.0"
+			    android:textSize="18dp" />
+
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:gravity="center"
+			    android:text="浙江连成环保科技有限公司"
+			    android:textSize="18dp" />
+
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:gravity="center"
+			    android:text="版权所有"
+			    android:textSize="18dp" />
+
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:gravity="center"
+			    android:text="地址：浙江省金华市苏孟工业园区苏东街8号"
+			    android:textSize="18dp" />
+
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:gravity="center"
+                android:autoLink="phone"
+			    android:text="全国服务热线：4001 0579 03"
+			    android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:autoLink="phone"
+                android:text="电话：0579-82030999"
+                android:textSize="18dp" />
+
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:gravity="center"
+                android:autoLink="phone"
+			    android:text="传真：0579-82030777"
+			    android:textSize="18dp" />
+
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:gravity="center"
+                android:autoLink="web"
+			    android:text="网址：http://www.zjlchb.com/"
+			    android:textSize="18dp" />
+
+			<TextView
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:gravity="center"
+                android:autoLink="email"
+			    android:text="邮箱：dn0579@163.com"
+			    android:textSize="18dp" />
+
+	</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="4"
+		    android:background="#FFFFFF"
+		    android:orientation="vertical" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="软件更新"
+                android:id="@+id/btnUpdate" />
+        </LinearLayout>
+	
+	</LinearLayout>
+
+</RelativeLayout>

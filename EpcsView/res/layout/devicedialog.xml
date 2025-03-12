@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/textdevicename"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3.2"
+        android:gravity="center_vertical"
+        android:text=" 设备名称:" />
+  
+    <EditText
+        android:id="@+id/editdevicename"
+        android:digits="LCHB1234567890-"
+        android:maxLength="20"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+  
+        <requestFocus />
+    </EditText>
+    
+    </LinearLayout>  
+    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:orientation="horizontal" >
+         
+    <TextView
+        android:id="@+id/textipaddr"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3.2"
+        android:gravity="center_vertical"
+        android:text=" IP地址:" />
+  
+    <EditText
+        android:id="@+id/editipaddr"
+        android:digits="1234567890."
+        android:maxLength="15"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+    
+    </LinearLayout>  
+    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:orientation="horizontal" >
+	
+    <TextView
+        android:id="@+id/textmaskaddr"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3.2"
+        android:gravity="center_vertical"
+        android:text=" MASK地址:" />
+  
+    <EditText
+        android:id="@+id/editmaskaddr"
+        android:digits="1234567890."
+        android:maxLength="15"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    </LinearLayout>  
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/textmacaddr"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3.2"
+        android:gravity="center_vertical"
+        android:text=" MAC地址:" />
+  
+    <EditText
+        android:id="@+id/editmacaddr"
+        android:digits="0123456789ABCDEFabcdef:"
+        android:maxLength="17"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+    
+    </LinearLayout>  
+  </LinearLayout> 
+</LinearLayout>  
