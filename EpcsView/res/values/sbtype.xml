@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="sbtype">
+		<item>位置设备</item>
+		<item>工频单相</item>
+		<item>工频三相</item>
+		<item>高频电源</item>
+	</string-array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EpcsView</string>
+    <string name="action_quit">退出</string>
+    <string name="title_section1">主画面</string>
+    <string name="title_section2">通信设置</string>
+    <string name="title_section3">实时数据</string>
+    <string name="title_section4">控制参数</string>
+    <string name="title_section5">校准参数</string>
+    <string name="title_section6">实时波形</string>
+</resources>
