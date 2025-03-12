@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.lchb.epcsview.MainActivity$PlaceholderFragment" >
+	
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="#000000"
+		    android:orientation="horizontal" >
+
+		<LinearLayout
+		    android:id="@+id/chartA"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_marginRight="1dp"
+		    android:layout_weight="1"
+		    android:background="#ffffff"
+		    android:orientation="horizontal" >
+
+		</LinearLayout>
+
+		<LinearLayout
+		    android:id="@+id/chartB"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_marginRight="1dp"
+		    android:layout_weight="1"
+		    android:background="#ffffff"
+		    android:orientation="horizontal" >
+
+		</LinearLayout>
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1.6"
+		    android:background="#000000"
+		    android:orientation="vertical" >
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_marginBottom="1dp"
+			    android:layout_weight="0.95"
+			    android:background="#ffffff"
+			    android:orientation="vertical" >
+
+			    <Button
+			        android:id="@+id/btnSinglePulseTest"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+			        android:text="单脉冲测试"
+			        android:textSize="14sp" />
+
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_marginBottom="1dp"
+			    android:layout_weight="1"
+			    android:background="#ffffff"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:background="#b7dee8"
+				    android:gravity="center"
+				    android:text="控制频率" />
+
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_marginBottom="1dp"
+			    android:layout_weight="1"
+			    android:background="#ffffff"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:id="@+id/txtCtrlFrequency"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:gravity="center"
+				    android:text="#####" />
+
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_marginBottom="1dp"
+			    android:layout_weight="1"
+			    android:background="#ffffff"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:id="@+id/txtCtrlFrequencySet"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:gravity="center"
+				    android:text="#####" />
+
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_marginBottom="1dp"
+			    android:layout_weight="1"
+			    android:background="#ffffff"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:background="#b7dee8"
+				    android:gravity="center"
+				    android:text="充电比" />
+
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_marginBottom="1dp"
+			    android:layout_weight="1"
+			    android:background="#ffffff"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:id="@+id/txtChargeRatioHigh"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:gravity="center"
+				    android:text="#####" />
+
+			</LinearLayout>
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_weight="1"
+			    android:background="#ffffff"
+			    android:orientation="vertical" >
+
+				<TextView
+				    android:id="@+id/txtChargeRatioLow"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_weight="1"
+				    android:gravity="center"
+				    android:text="#####" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+		</LinearLayout>
+
+</RelativeLayout>
