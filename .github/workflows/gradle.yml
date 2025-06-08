@@ -45,6 +45,11 @@ jobs:
       run: |  
         echo "sdk.dir=$ANDROID_HOME" > local.properties  
   
+    - name: Create gradle.properties for single-threaded build  
+      run: |  
+        echo "org.gradle.parallel=false" > gradle.properties  
+        echo "org.gradle.workers.max=1" >> gradle.properties  
+  
     - name: Cache Gradle dependencies  
       uses: actions/cache@v3  
       with:  
@@ -58,8 +63,8 @@ jobs:
     - name: Make gradlew executable  
       run: chmod +x ./gradlew  
   
-    - name: Build with Gradle (Single-threaded)  
-      run: ./gradlew build --max-workers=1  
+    - name: Build with Gradle (Single-threaded via properties)  
+      run: ./gradlew build  
       env:  
         SLAVE_AAPT_TIMEOUT: 60  
         ANDROID_HOME: ${{ env.ANDROID_HOME }}
