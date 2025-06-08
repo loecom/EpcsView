@@ -27,7 +27,15 @@ jobs:
       run: |  
         sdkmanager "platforms;android-16"  
         sdkmanager "build-tools;22.0.1"  
-  
+        
+    - name: Fix resource file placement  
+      run: |  
+        # 检查并移动错误放置的图片文件  
+        if [ -f "EpcsView/res/layout-land/ic_launcher.png" ]; then  
+          mkdir -p EpcsView/res/drawable-land  
+          mv EpcsView/res/layout-land/ic_launcher.png EpcsView/res/drawable-land/  
+        fi
+    
     - name: Set up JDK 8 for Gradle  
       uses: actions/setup-java@v3  
       with:  
