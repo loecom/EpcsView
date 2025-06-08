@@ -14,27 +14,23 @@ jobs:
     - name: Checkout code  
       uses: actions/checkout@v4  
   
-    - name: Set up JDK 8  
+    - name: Set up JDK 8 for Gradle  
       uses: actions/setup-java@v3  
       with:  
         java-version: '8'  
         distribution: 'temurin'  
   
-    - name: Setup Android SDK  
+    - name: Setup Android SDK with JDK version check skip  
       uses: android-actions/setup-android@v3  
-  
-    - name: Accept Android SDK licenses  
-      run: yes | sdkmanager --licenses  
+      env:  
+        SKIP_JDK_VERSION_CHECK: true  
   
     - name: Install Android SDK components  
       run: |  
         sdkmanager "platforms;android-16"  
         sdkmanager "build-tools;22.0.1"  
-
-    - name: Set up Gradle 2.2.1  
-      uses: gradle/gradle-build-action@v3  
-      with:  
-        gradle-version: 2.2.1  
+      env:  
+        SKIP_JDK_VERSION_CHECK: true  
   
     - name: Cache Gradle dependencies  
       uses: actions/cache@v3  
