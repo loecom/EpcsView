@@ -14,6 +14,12 @@ jobs:
     - name: Checkout code  
       uses: actions/checkout@v4  
   
+    - name: Install 32-bit libraries for legacy Android tools  
+      run: |  
+        sudo dpkg --add-architecture i386  
+        sudo apt-get update  
+        sudo apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386  
+  
     - name: Set up JDK 17 for Android SDK  
       uses: actions/setup-java@v3  
       with:  
@@ -63,7 +69,7 @@ jobs:
     - name: Make gradlew executable  
       run: chmod +x ./gradlew  
   
-    - name: Build with Gradle (Single-threaded via properties)  
+    - name: Build with Gradle  
       run: ./gradlew build  
       env:  
         SLAVE_AAPT_TIMEOUT: 60  
