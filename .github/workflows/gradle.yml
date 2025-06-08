@@ -58,8 +58,8 @@ jobs:
     - name: Make gradlew executable  
       run: chmod +x ./gradlew  
   
-    - name: Build with Gradle  
-      run: ./gradlew build  
+    - name: Build with Gradle (Single-threaded)  
+      run: ./gradlew build --max-workers=1  
       env:  
-        SLAVE_AAPT_TIMEOUT: 30  
+        SLAVE_AAPT_TIMEOUT: 60  
         ANDROID_HOME: ${{ env.ANDROID_HOME }}
