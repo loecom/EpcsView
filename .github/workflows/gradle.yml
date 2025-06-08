@@ -34,6 +34,10 @@ jobs:
         java-version: '8'  
         distribution: 'temurin'  
   
+    - name: Create local.properties  
+      run: |  
+        echo "sdk.dir=$ANDROID_HOME" > local.properties  
+  
     - name: Cache Gradle dependencies  
       uses: actions/cache@v3  
       with:  
@@ -48,4 +52,6 @@ jobs:
       run: chmod +x ./gradlew  
   
     - name: Build with Gradle  
-      run: ./gradlew build
+      run: ./gradlew build  
+      env:  
+        ANDROID_HOME: ${{ env.ANDROID_HOME }}
