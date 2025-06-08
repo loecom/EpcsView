@@ -14,23 +14,25 @@ jobs:
     - name: Checkout code  
       uses: actions/checkout@v4  
   
-    - name: Set up JDK 8 for Gradle  
+    - name: Set up JDK 17 for Android SDK  
       uses: actions/setup-java@v3  
       with:  
-        java-version: '8'  
+        java-version: '17'  
         distribution: 'temurin'  
   
-    - name: Setup Android SDK with JDK version check skip  
+    - name: Setup Android SDK  
       uses: android-actions/setup-android@v3  
-      env:  
-        SKIP_JDK_VERSION_CHECK: true  
   
     - name: Install Android SDK components  
       run: |  
         sdkmanager "platforms;android-16"  
         sdkmanager "build-tools;22.0.1"  
-      env:  
-        SKIP_JDK_VERSION_CHECK: true  
+  
+    - name: Set up JDK 8 for Gradle  
+      uses: actions/setup-java@v3  
+      with:  
+        java-version: '8'  
+        distribution: 'temurin'  
   
     - name: Cache Gradle dependencies  
       uses: actions/cache@v3  
