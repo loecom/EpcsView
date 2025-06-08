@@ -1,39 +1,48 @@
-name: Android CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-
-    - name: Set up JDK 6
-      uses: actions/setup-java@v3
-      with:
-        java-version: '6'
-        distribution: 'adopt'
-
-    - name: Set up Gradle 2.2.1
-      uses: gradle/gradle-build-action@v3
-      with:
-        gradle-version: 2.2.1
-
-    - name: Cache Gradle dependencies
-      uses: actions/cache@v3
-      with:
-        path: |
-          ~/.gradle/caches
-          ~/.gradle/wrapper
-        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
-        restore-keys: |
-          ${{ runner.os }}-gradle-
-
-    - name: Build with Gradle
+name: EpcsView Android CI  
+  
+on:  
+  push:  
+    branches: [ main ]  
+  pull_request:  
+    branches: [ main ]  
+  
+jobs:  
+  build:  
+    runs-on: ubuntu-latest  
+  
+    steps:  
+    - name: Checkout code  
+      uses: actions/checkout@v4  
+  
+    - name: Set up JDK 6  
+      uses: actions/setup-java@v3  
+      with:  
+        java-version: '6'  
+        distribution: 'adopt'  
+  
+    - name: Set up Android SDK  
+      uses: android-actions/setup-android@v2  
+      with:  
+        api-level: 16  
+        build-tools: 22.0.1  
+  
+    - name: Set up Gradle 2.2.1  
+      uses: gradle/gradle-build-action@v3  
+      with:  
+        gradle-version: 2.2.1  
+  
+    - name: Cache Gradle dependencies  
+      uses: actions/cache@v3  
+      with:  
+        path: |  
+          ~/.gradle/caches  
+          ~/.gradle/wrapper  
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}  
+        restore-keys: |  
+          ${{ runner.os }}-gradle-  
+  
+    - name: Make gradlew executable  
+      run: chmod +x ./gradlew  
+  
+    - name: Build with Gradle  
       run: ./gradlew build
