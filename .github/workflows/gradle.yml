@@ -12,7 +12,7 @@ jobs:
   
     steps:  
     - name: Checkout code  
-      uses: actions/checkout@v4  Q
+      uses: actions/checkout@v4
   
     - name: Install 32-bit libraries for legacy Android tools  
       run: |  
