@@ -9,7 +9,7 @@ dependencies {
 android {
     compileSdkVersion 16
     buildToolsVersion '22.0.1'
-    compileOptions.encoding = "GBK"
+    compileOptions.encoding = "UTF-8"
     /*def manifestFile = file("AndroidManifest.xml")
     if (manifestFile.canRead()) {
         def pattern = Pattern.compile("versionCode=\"(\\d+)\"")
