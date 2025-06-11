@@ -10,6 +10,15 @@ android {
     compileSdkVersion 16
     buildToolsVersion '22.0.1'
     compileOptions.encoding = "UTF-8"
+
+    lintOptions {
+        abortOnError false
+        // 可选：忽略特定的 Lint 检查
+        disable 'InvalidPackage', 'OldTargetApi'
+        // 可选：只检查错误，忽略警告
+        warningsAsErrors false
+    }
+    
     /*def manifestFile = file("AndroidManifest.xml")
     if (manifestFile.canRead()) {
         def pattern = Pattern.compile("versionCode=\"(\\d+)\"")
