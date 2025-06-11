@@ -78,7 +78,7 @@ jobs:
     - name: Upload APK artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: epcsview-debug-unaligned-apk
+        name: epcsview-debug-apk
         path: |
-          EpcsView/build/outputs/apk/debug/EpcsView-debug-unaligned.apk
+          EpcsView/build/outputs/apk/debug/*.apk
         retention-days: 30
