@@ -74,21 +74,21 @@ jobs:
       env:  
         SLAVE_AAPT_TIMEOUT: 60  
         ANDROID_HOME: ${{ env.ANDROID_HOME }}
-        
-    - name: Upload APK artifacts  
-      uses: actions/upload-artifact@v3  
-      with:  
-        name: apk-files  
-        path: |  
-          EpcsView/build/outputs/apk/**/*.apk  
-        retention-days: 30  
-  
-    - name: Upload build reports  
-      uses: actions/upload-artifact@v3  
-      if: always()  
-      with:  
-        name: build-reports  
-        path: |  
-          EpcsView/build/reports/  
-          EpcsView/build/outputs/lint-results.*  
+
+    - name: Upload APK artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: apk-files
+        path: |
+          EpcsView/build/outputs/apk/**/*.apk
+        retention-days: 30
+
+    - name: Upload build reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: build-reports
+        path: |
+          EpcsView/build/reports/
+          EpcsView/build/outputs/lint-results.*
         retention-days: 7
