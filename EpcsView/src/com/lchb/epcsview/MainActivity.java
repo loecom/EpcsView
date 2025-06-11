@@ -55,10 +55,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener, O
             	break;
         	case MBTCPERR:
     			//new AlertDialog.Builder(MainActivity.this)
-    			//.setTitle("Í¨Ñ¶´íÎó")
-    			//.setMessage("Modbus TCPÍ¨Ñ¶´íÎó!")
+    			//.setTitle("é€šè®¯é”™è¯¯")
+    			//.setMessage("Modbus TCPé€šè®¯é”™è¯¯!")
         		//.setCancelable(false)
-    		    //.setPositiveButton("È·¶¨", null).show();
+    		    //.setPositiveButton("ç¡®å®š", null).show();
         		break;
             default:
             	break;
@@ -94,23 +94,23 @@ public class MainActivity extends FragmentActivity implements OnClickListener, O
 		mGestureDetector=new GestureDetector(this);
     	final EditText input = new EditText(MainActivity.this);
     	new AlertDialog.Builder(MainActivity.this)
-		.setTitle("ÊäÈëÃÜÂë")
-		.setMessage("ÇëÊäÈëĞŞ¸ÄÈ¨ÏŞÃÜÂë!")
+		.setTitle("è¾“å…¥å¯†ç ")
+		.setMessage("è¯·è¾“å…¥ä¿®æ”¹æƒé™å¯†ç !")
 		.setView(input)
 		.setCancelable(false)
-	    .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() { 
+	    .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() { 
 	        @Override 
 	        public void onClick(DialogInterface dialog, int which) { 
-	        	// µã»÷¡°È·ÈÏ¡±ºóµÄ²Ù×÷
+	        	// ç‚¹å‡»â€œç¡®è®¤â€åçš„æ“ä½œ
 	        	String password=input.getText().toString();
 	        	if (password.equals("4388")){
 	        	}
 	        	else{
     				new AlertDialog.Builder(MainActivity.this)
-    				.setTitle("ÃÜÂë´íÎó")
-    				.setMessage("ÃÜÂë²»ÕıÈ·¼´½«ÍË³ö³ÌĞò!")
+    				.setTitle("å¯†ç é”™è¯¯")
+    				.setMessage("å¯†ç ä¸æ­£ç¡®å³å°†é€€å‡ºç¨‹åº!")
     				.setCancelable(false)
-    			    .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+    			    .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
     			        @Override 
     			        public void onClick(DialogInterface dialog, int which) {
     			    		GlobalVar globalvar=(GlobalVar)getApplication();
@@ -175,7 +175,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener, O
 		txtTitle=(TextView)findViewById(R.id.txtTitle);
 		btnPrv.setOnClickListener(this);
 		btnNext.setOnClickListener(this);
-		txtTitle.setText("Ö÷Ò³");
+		txtTitle.setText("ä¸»é¡µ");
 	}
 	
 	@Override
@@ -195,10 +195,10 @@ public class MainActivity extends FragmentActivity implements OnClickListener, O
 		}
 		else{
 			new AlertDialog.Builder(this)
-			.setTitle("ÍË³ö³ÌĞò")
-			.setMessage("È·¶¨ÒªÍË³öÂğ?")
+			.setTitle("é€€å‡ºç¨‹åº")
+			.setMessage("ç¡®å®šè¦é€€å‡ºå—?")
 			.setCancelable(false)
-		    .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() { 
+		    .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() { 
 		        @Override 
 		        public void onClick(DialogInterface dialog, int which) {
 		    		GlobalVar globalvar=(GlobalVar)getApplication();
@@ -208,7 +208,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener, O
 		        	System.exit(0);
 		        } 
 		    }) 
-		    .setNegativeButton("È¡Ïû", null).show();
+		    .setNegativeButton("å–æ¶ˆ", null).show();
 		}
 	}
 
@@ -453,19 +453,19 @@ public class MainActivity extends FragmentActivity implements OnClickListener, O
 		}
 		switch (nIndex){
 		case 0:
-			txtTitle.setText("Ö÷Ò³");
+			txtTitle.setText("ä¸»é¡µ");
 			break;
 		case 1:
-			txtTitle.setText("µ÷ÊÔ");
+			txtTitle.setText("è°ƒè¯•");
 			break;
 		case 2:
-			txtTitle.setText("²¨ĞÎ");
+			txtTitle.setText("æ³¢å½¢");
 			break;
 		case 3:
-			txtTitle.setText("¹ØÓÚÁ¬³É");
+			txtTitle.setText("å…³äºè¿æˆ");
 			break;
 		default:
-			txtTitle.setText("Á¬³É»·±£");
+			txtTitle.setText("è¿æˆç¯ä¿");
 			break;
 		}
 	}

@@ -40,7 +40,7 @@ import android.widget.TextView;
 	public class MainFragment extends Fragment {
 		private ListView wifiList;
 		private ListView DeviceList;
-		private List<ScanResult> list;//É¨Ãè½á¹ûÁĞ±í
+		private List<ScanResult> list;//æ‰«æç»“æœåˆ—è¡¨
 		private List<udpcmdtype> devicelist;
 		private wifiAdapter adapter;
 		private deviceAdapter deviceadapter;
@@ -130,15 +130,15 @@ import android.widget.TextView;
 	            		break;
 	            	case SETDEVICEOK:
         				new AlertDialog.Builder(getActivity())
-        				.setTitle("ĞŞ¸Ä³É¹¦").setMessage("Éè±¸ĞÅÏ¢ĞŞ¸Ä³É¹¦!")
+        				.setTitle("ä¿®æ”¹æˆåŠŸ").setMessage("è®¾å¤‡ä¿¡æ¯ä¿®æ”¹æˆåŠŸ!")
         				.setCancelable(false)
-        			    .setPositiveButton("È·¶¨", null).show();
+        			    .setPositiveButton("ç¡®å®š", null).show();
 	            		break;
 	            	case SETDEVICENOK:
         				new AlertDialog.Builder(getActivity())
-        				.setTitle("ĞŞ¸ÄÊ§°Ü").setMessage("Éè±¸ĞÅÏ¢ĞŞ¸ÄÊ§°Ü,ÇëÖØĞÂĞŞ¸Ä!")
+        				.setTitle("ä¿®æ”¹å¤±è´¥").setMessage("è®¾å¤‡ä¿¡æ¯ä¿®æ”¹å¤±è´¥,è¯·é‡æ–°ä¿®æ”¹!")
         				.setCancelable(false)
-        			    .setPositiveButton("È·¶¨", null).show();
+        			    .setPositiveButton("ç¡®å®š", null).show();
 	            		break;
 	            	case UPDATEDEVICEFIRST:
                 		deviceadapter=new deviceAdapter(getActivity(),(List<udpcmdtype>)msg.obj,R.layout.listitem);
@@ -391,13 +391,13 @@ import android.widget.TextView;
 	        	final EditText input = new EditText(getActivity());
 		        final ScanResult wifiinfo=(ScanResult)content.getTag();
 	        	final String ssid=wifiinfo.SSID.toString();
-	            Builder dialog=new AlertDialog.Builder(getActivity()).setTitle("½¨Á¢Á¬½Ó")
+	            Builder dialog=new AlertDialog.Builder(getActivity()).setTitle("å»ºç«‹è¿æ¥")
 		        	.setCancelable(false)
-	            	.setNegativeButton("È¡Ïû", null)
-	    		    .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+	            	.setNegativeButton("å–æ¶ˆ", null)
+	    		    .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
 						@Override
 		        		public void onClick(DialogInterface dialog, int which) {
-		        			// µã»÷¡°È·ÈÏ¡±ºóµÄ²Ù×÷
+		        			// ç‚¹å‡»â€œç¡®è®¤â€åçš„æ“ä½œ
 		        			String password="";
 		                	String[] SSID=ssid.toString().split("-");
 			            	if ((wifiinfo.capabilities.toString().indexOf("WPA")>0)||(wifiinfo.capabilities.toString().indexOf("WEP")>0)){
@@ -408,9 +408,9 @@ import android.widget.TextView;
 			            	}
 		        			if (password.equals("")){
 		        				new AlertDialog.Builder(getActivity())
-		        				.setTitle("ÃÜÂë´íÎó").setMessage("ÃÜÂëÎª¿ÕÇëÖØĞÂÁ¬½Ó!")
+		        				.setTitle("å¯†ç é”™è¯¯").setMessage("å¯†ç ä¸ºç©ºè¯·é‡æ–°è¿æ¥!")
 		    	        		.setCancelable(false)
-		        			    .setPositiveButton("È·¶¨", null).show();
+		        			    .setPositiveButton("ç¡®å®š", null).show();
 		        			}
 		        			else{
 		        				if (wifiinfo.capabilities.toString().indexOf("WPA")>0){
@@ -445,13 +445,13 @@ import android.widget.TextView;
 		        		}
 		        	});
 	            if ((wifiinfo.capabilities.toString().indexOf("WPA")>0)||(wifiinfo.capabilities.toString().indexOf("WEP")>0)){
-	            	dialog.setMessage("ÊäÈëÃÜÂë²¢È·ÈÏÁ¬½ÓÂğ?").setView(input).show();
+	            	dialog.setMessage("è¾“å…¥å¯†ç å¹¶ç¡®è®¤è¿æ¥å—?").setView(input).show();
 	        		Message msg = mHandler.obtainMessage();
 	        		msg.what = POPKEYBORAD;
 	        		msg.sendToTarget();
 	            }
 	            else if ((wifiinfo.capabilities.toString().indexOf("WPA")<0)&&(wifiinfo.capabilities.toString().indexOf("WEP")<0)){
-	            	dialog.setMessage("È·ÈÏÁ¬½ÓÂğ?").show();
+	            	dialog.setMessage("ç¡®è®¤è¿æ¥å—?").show();
 	            }
 	        }
 	    }
@@ -473,13 +473,13 @@ import android.widget.TextView;
 		        maskaddr.setText(device.getmaskaddr());
 		        macaddr.setText(device.getmacaddr());
 		        new AlertDialog.Builder(getActivity())
-			    .setTitle("Éè±¸ĞÅÏ¢")
+			    .setTitle("è®¾å¤‡ä¿¡æ¯")
 			    .setView(deviceview)
         		.setCancelable(false)
-			    .setPositiveButton("Á¬½Ó", new DialogInterface.OnClickListener() {
+			    .setPositiveButton("è¿æ¥", new DialogInterface.OnClickListener() {
 			        @Override
 			        public void onClick(DialogInterface dialog, int which) {
-			        	// µã»÷¡°È·ÈÏ¡±ºóµÄ²Ù×÷
+			        	// ç‚¹å‡»â€œç¡®è®¤â€åçš„æ“ä½œ
 						String devicename=device.getdevicename().toString();
 						String[] namelist=devicename.split("-");
 			    		if (namelist.length==7){
@@ -494,11 +494,11 @@ import android.widget.TextView;
 			    		}
 			        }
 			    })
-			    .setNegativeButton("È¡Ïû", null)
-				.setNeutralButton("ĞŞ¸Ä", new DialogInterface.OnClickListener() {
+			    .setNegativeButton("å–æ¶ˆ", null)
+				.setNeutralButton("ä¿®æ”¹", new DialogInterface.OnClickListener() {
 				    @Override
 				    public void onClick(DialogInterface dialog, int which) {
-				    	// µã»÷¡°ĞŞ¸Ä¡±ºóµÄ²Ù×÷
+				    	// ç‚¹å‡»â€œä¿®æ”¹â€åçš„æ“ä½œ
 				    	boolean devicestatus=checkdevice(devicename.getText().toString(),txtipaddr.getText().toString(),maskaddr.getText().toString(),macaddr.getText().toString());
 				    	if (devicestatus){
 				    		device.setcmd(Byte.parseByte("1"));
@@ -521,22 +521,22 @@ import android.widget.TextView;
 		        	if(("LCHB-".equals(ssid.toString().substring(0, 5)))||("TP-LINK_LCHBmian".equals(ssid))){}
 		        	else{
 		            	list.remove(i);
-		            	--i;//É¾³ıÁËÔªËØ£¬µü´úµÄÏÂ±êÒ²¸ú×Å¸Ä±ä
+		            	--i;//åˆ é™¤äº†å…ƒç´ ï¼Œè¿­ä»£çš„ä¸‹æ ‡ä¹Ÿè·Ÿç€æ”¹å˜
 		        	}
 	    		}
 	    		else{
 	            	list.remove(i);
-	            	--i;//É¾³ıÁËÔªËØ£¬µü´úµÄÏÂ±êÒ²¸ú×Å¸Ä±ä
+	            	--i;//åˆ é™¤äº†å…ƒç´ ï¼Œè¿­ä»£çš„ä¸‹æ ‡ä¹Ÿè·Ÿç€æ”¹å˜
 	    		}
 	    	}
 			return list;
 	    }
 	    
 	    public boolean checkdevice(String devicename, String ipaddr, String maskaddr, String macaddr){
-			// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
-    		Builder dialog=new AlertDialog.Builder(getActivity()).setTitle("ĞŞ¸Ä´íÎó")
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
+    		Builder dialog=new AlertDialog.Builder(getActivity()).setTitle("ä¿®æ”¹é”™è¯¯")
 	        .setCancelable(false)
-    	    .setPositiveButton("È·¶¨", null);
+    	    .setPositiveButton("ç¡®å®š", null);
     		boolean result=false;
 			String temp1[]=new String[7];
 			String temp2[]=new String[4];
@@ -555,7 +555,7 @@ import android.widget.TextView;
 		    				}
 		    				else{
 		    					result=false;
-		    		    		dialog.setMessage("Éè±¸Ãû³ÆÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+		    		    		dialog.setMessage("è®¾å¤‡åç§°è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 		    		    		return result;
 		    				}
 		    				break;
@@ -571,20 +571,20 @@ import android.widget.TextView;
 		    		    	}
 		    		    	catch(NumberFormatException e){
 		    					result=false;
-		    		    		dialog.setMessage("Éè±¸Ãû³ÆÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+		    		    		dialog.setMessage("è®¾å¤‡åç§°è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 		    		    		return result;
 		    		    	}
 		    				break;
 		    			default:
 	    					result=false;
-	    		    		dialog.setMessage("Éè±¸Ãû³ÆÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+	    		    		dialog.setMessage("è®¾å¤‡åç§°è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 	    		    		return result;
 		    		}
 		    	}
 	    	}
 	    	else{
 				result=false;
-	    		dialog.setMessage("Éè±¸Ãû³ÆÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+	    		dialog.setMessage("è®¾å¤‡åç§°è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 	    		return result;
 	    	}
 	    	if (temp2.length==4){
@@ -600,20 +600,20 @@ import android.widget.TextView;
 		    		    	}
 		    		    	catch(NumberFormatException e){
 		    					result=false;
-		    		    		dialog.setMessage("IPµØÖ·ÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+		    		    		dialog.setMessage("IPåœ°å€è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 		    		    		return result;
 		    		    	}
 		    				break;
 		    			default:
 	    					result=false;
-	    		    		dialog.setMessage("IPµØÖ·ÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+	    		    		dialog.setMessage("IPåœ°å€è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 	    		    		return result;
 		    		}
 		    	}
 	    	}
 	    	else{
 				result=false;
-	    		dialog.setMessage("IPµØÖ·ÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+	    		dialog.setMessage("IPåœ°å€è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 	    		return result;
 	    	}
 	    	if (temp3.length==4){
@@ -629,20 +629,20 @@ import android.widget.TextView;
 		    		    	}
 		    		    	catch(NumberFormatException e){
 		    					result=false;
-		    		    		dialog.setMessage("MASKµØÖ·ÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+		    		    		dialog.setMessage("MASKåœ°å€è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 		    		    		return result;
 		    		    	}
 		    				break;
 		    			default:
 	    					result=false;
-	    		    		dialog.setMessage("MASKµØÖ·ÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+	    		    		dialog.setMessage("MASKåœ°å€è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 	    		    		return result;
 		    		}
 		    	}
 	    	}
 	    	else{
 				result=false;
-	    		dialog.setMessage("MASKµØÖ·ÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+	    		dialog.setMessage("MASKåœ°å€è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 	    		return result;
 	    	}
 	    	if (temp4.length==6){
@@ -660,20 +660,20 @@ import android.widget.TextView;
 		    		    	}
 		    		    	catch(NumberFormatException e){
 		    					result=false;
-		    		    		dialog.setMessage("MACµØÖ·ÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+		    		    		dialog.setMessage("MACåœ°å€è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 		    		    		return result;
 		    		    	}
 		    				break;
 		    			default:
 	    					result=false;
-	    		    		dialog.setMessage("MACµØÖ·ÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+	    		    		dialog.setMessage("MACåœ°å€è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 	    		    		return result;
 		    		}
 		    	}
 	    	}
 	    	else{
 				result=false;
-	    		dialog.setMessage("MACµØÖ·ÊäÈë´íÎó,ÇëÖØĞÂĞŞ¸Ä!").show();
+	    		dialog.setMessage("MACåœ°å€è¾“å…¥é”™è¯¯,è¯·é‡æ–°ä¿®æ”¹!").show();
 	    		return result;
 	    	}
 			return result;

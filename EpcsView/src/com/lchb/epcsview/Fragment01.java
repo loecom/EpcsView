@@ -137,9 +137,9 @@ import android.widget.TextView;
 		OnClickListener listener=new OnClickListener(){
 			public void onClick(final View v){
 				final Builder dialog=new Builder(getActivity())
-				.setTitle("Éè±¸²Ù×÷")
+				.setTitle("è®¾å¤‡æ“ä½œ")
 				.setCancelable(false)
-			    .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() { 
+			    .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() { 
 			        @Override 
 			        public void onClick(DialogInterface dialog, int which) {
 						switch (v.getId()){
@@ -172,34 +172,34 @@ import android.widget.TextView;
 						}
 			        } 
 			    }) 
-			    .setNegativeButton("È¡Ïû", new DialogInterface.OnClickListener() { 
+			    .setNegativeButton("å–æ¶ˆ", new DialogInterface.OnClickListener() { 
 			        @Override 
 			        public void onClick(DialogInterface dialog, int which) {} 
 			    });
 				switch (v.getId()){
 				case R.id.btnStart:
-					dialog.setMessage("È·¶¨Òª¿ª»úÂğ?").show();
+					dialog.setMessage("ç¡®å®šè¦å¼€æœºå—?").show();
 					break;
 				case R.id.btnStop:
-					dialog.setMessage("È·¶¨ÒªÍ£»úÂğ?").show();
+					dialog.setMessage("ç¡®å®šè¦åœæœºå—?").show();
 					break;
 				case R.id.btnUp:
-					dialog.setMessage("È·¶¨Òª»Ö¸´Âğ?").show();
+					dialog.setMessage("ç¡®å®šè¦æ¢å¤å—?").show();
 					break;
 				case R.id.btnPause:
-					dialog.setMessage("È·¶¨ÒªÖĞÖ¹Âğ?").show();
+					dialog.setMessage("ç¡®å®šè¦ä¸­æ­¢å—?").show();
 					break;
 				case R.id.btnDown:
-					dialog.setMessage("È·¶¨Òª½µÑ¹Âğ?").show();
+					dialog.setMessage("ç¡®å®šè¦é™å‹å—?").show();
 					break;
 				case R.id.btnRstAlarm:
-					dialog.setMessage("È·¶¨ÒªÇå³ı¹ÊÕÏÂğ?").show();
+					dialog.setMessage("ç¡®å®šè¦æ¸…é™¤æ•…éšœå—?").show();
 					break;
 				case R.id.btnReset:
-					dialog.setMessage("È·¶¨ÒªÖØÆôÉè±¸Âğ?").show();
+					dialog.setMessage("ç¡®å®šè¦é‡å¯è®¾å¤‡å—?").show();
 					break;
 				case R.id.btnSaveSetting:
-					dialog.setMessage("È·¶¨Òª±£´æÊı¾İÂğ?").show();
+					dialog.setMessage("ç¡®å®šè¦ä¿å­˜æ•°æ®å—?").show();
 					break;
 				default:
 					break;
@@ -224,10 +224,10 @@ import android.widget.TextView;
 	        		break;
 	        	case WRITEERROR:
 	        		new Builder(getActivity())
-	        		.setTitle("Éè±¸²Ù×÷")
-	        		.setMessage("²Ù×÷Ê§°Ü")
+	        		.setTitle("è®¾å¤‡æ“ä½œ")
+	        		.setMessage("æ“ä½œå¤±è´¥")
 	        		.setCancelable(false)
-	        		.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() { 
+	        		.setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() { 
 	        			@Override 
 	        			public void onClick(DialogInterface dialog, int which) {
 			        } 
@@ -347,80 +347,80 @@ import android.widget.TextView;
 			v40000=globalvar.getv40000();
 			
 			txt[0].setTitle("");txt[0].setisWrite(false);
-			txt[0].setValue(String.valueOf(v40000[2])+"#Â¯"+String.valueOf(v40000[3])+"#³ı³¾Æ÷"+
-					String.valueOf(v40000[4])+"#Í¨µÀ"+String.valueOf(v40000[5])+"#µç³¡"+String.valueOf(v40000[1])+"#Éè±¸");
+			txt[0].setValue(String.valueOf(v40000[2])+"#ç‚‰"+String.valueOf(v40000[3])+"#é™¤å°˜å™¨"+
+					String.valueOf(v40000[4])+"#é€šé“"+String.valueOf(v40000[5])+"#ç”µåœº"+String.valueOf(v40000[1])+"#è®¾å¤‡");
 			txt[0].settxtItem1("");txt[0].settxtItem2("");txt[0].settxtItem3("");txt[0].setindex(0);
 			
 			txt[1].setTitle("");txt[1].setisWrite(false);
 			txt[1].settxtItem1("");txt[1].settxtItem2("");txt[1].settxtItem3("");txt[1].setindex(0);
 			switch (v40000[15]){
-			case 1:txt[1].setValue("ÀàĞÍ:¹¤Æµµ¥Ïà");break;
-			case 2:txt[1].setValue("ÀàĞÍ:¹¤ÆµÈıÏà");break;
-			case 3:txt[1].setValue("ÀàĞÍ:¸ßÆµµçÔ´");break;
-			default:txt[1].setValue("ÀàĞÍ:Î´ÖªÉè±¸");break;}
+			case 1:txt[1].setValue("ç±»å‹:å·¥é¢‘å•ç›¸");break;
+			case 2:txt[1].setValue("ç±»å‹:å·¥é¢‘ä¸‰ç›¸");break;
+			case 3:txt[1].setValue("ç±»å‹:é«˜é¢‘ç”µæº");break;
+			default:txt[1].setValue("ç±»å‹:æœªçŸ¥è®¾å¤‡");break;}
 			
 			txt[2].setTitle("");txt[2].setisWrite(false);
 			txt[2].settxtItem1("");txt[2].settxtItem2("");txt[2].settxtItem3("");txt[2].setindex(0);
 			switch (v30000[24]){
-			case 1:txt[2].setValue("ÔËĞĞ");break;
-			case 2:txt[2].setValue("ÖĞÖ¹");break;
-			case 3:txt[2].setValue("ÏÂ½µ");break;
-			default:txt[2].setValue("Í£»ú");break;}
+			case 1:txt[2].setValue("è¿è¡Œ");break;
+			case 2:txt[2].setValue("ä¸­æ­¢");break;
+			case 3:txt[2].setValue("ä¸‹é™");break;
+			default:txt[2].setValue("åœæœº");break;}
 			
 			txt[3].setTitle("");
 			txt[3].settxtItem1("");txt[3].settxtItem2("");txt[3].settxtItem3("");txt[3].setindex(0);
 			switch (v30000[23]){
-			case 1:txt[3].setValue("Í¬²½¹ÊÕÏ");break;
-			case 2:txt[3].setValue("ÊäÈë¿ªÂ·");break;
-			case 3:txt[3].setValue("ÊäÈë¹ıÁ÷");break;
-			case 4:txt[3].setValue("Êä³ö¿ªÂ·");break;
-			case 5:txt[3].setValue("Êä³ö¶ÌÂ·");break;
-			case 6:txt[3].setValue("Êä³öÇ·Ñ¹");break;
-			case 7:txt[3].setValue("Æ«Àø´Å");break;
-			case 8:txt[3].setValue("ÇáÍßË¹");break;
-			case 9:txt[3].setValue("ÖØÍßË¹");break;
-			case 10:txt[3].setValue("±¨¾¯ĞÅºÅ");break;
-			case 11:txt[3].setValue("ÌøÕ¢ĞÅºÅ");break;
-			case 12:txt[3].setValue("ÁÙ½çÓÍÎÂ");break;
-			case 13:txt[3].setValue("Î£ÏÕÓÍÎÂ");break;
-			case 14:txt[3].setValue("CPUÒì³£");break;
-			case 15:txt[3].setValue("ÈıÏà²»Æ½ºâ");break;
-			case 16:txt[3].setValue("Í¬²½¸ÉÈÅ");break;
-			case 17:txt[3].setValue("ÎŞ¶ş´ÎµçÁ÷");break;
-			case 18:txt[3].setValue("¶ş´ÎµçÁ÷Òì³£");break;
-			case 19:txt[3].setValue("Ä¸ÏßµçÑ¹µÍ");break;
-			case 20:txt[3].setValue("½Ó´¥Æ÷Î´±ÕºÏ");break;
-			case 21:txt[3].setValue("½Ó´¥Æ÷Î´¶Ï¿ª");break;
-			case 22:txt[3].setValue("ÀäÈ´»ØÂ·Òì³£");break;
-			case 23:txt[3].setValue("IGBT¹ÊÕÏ");break;
-            case 24:txt[3].setValue("Ä¸ÏßµçÑ¹¸ß");break;
-			default:txt[3].setValue("Éè±¸Õı³£");break;}
+			case 1:txt[3].setValue("åŒæ­¥æ•…éšœ");break;
+			case 2:txt[3].setValue("è¾“å…¥å¼€è·¯");break;
+			case 3:txt[3].setValue("è¾“å…¥è¿‡æµ");break;
+			case 4:txt[3].setValue("è¾“å‡ºå¼€è·¯");break;
+			case 5:txt[3].setValue("è¾“å‡ºçŸ­è·¯");break;
+			case 6:txt[3].setValue("è¾“å‡ºæ¬ å‹");break;
+			case 7:txt[3].setValue("ååŠ±ç£");break;
+			case 8:txt[3].setValue("è½»ç“¦æ–¯");break;
+			case 9:txt[3].setValue("é‡ç“¦æ–¯");break;
+			case 10:txt[3].setValue("æŠ¥è­¦ä¿¡å·");break;
+			case 11:txt[3].setValue("è·³é—¸ä¿¡å·");break;
+			case 12:txt[3].setValue("ä¸´ç•Œæ²¹æ¸©");break;
+			case 13:txt[3].setValue("å±é™©æ²¹æ¸©");break;
+			case 14:txt[3].setValue("CPUå¼‚å¸¸");break;
+			case 15:txt[3].setValue("ä¸‰ç›¸ä¸å¹³è¡¡");break;
+			case 16:txt[3].setValue("åŒæ­¥å¹²æ‰°");break;
+			case 17:txt[3].setValue("æ— äºŒæ¬¡ç”µæµ");break;
+			case 18:txt[3].setValue("äºŒæ¬¡ç”µæµå¼‚å¸¸");break;
+			case 19:txt[3].setValue("æ¯çº¿ç”µå‹ä½");break;
+			case 20:txt[3].setValue("æ¥è§¦å™¨æœªé—­åˆ");break;
+			case 21:txt[3].setValue("æ¥è§¦å™¨æœªæ–­å¼€");break;
+			case 22:txt[3].setValue("å†·å´å›è·¯å¼‚å¸¸");break;
+			case 23:txt[3].setValue("IGBTæ•…éšœ");break;
+            case 24:txt[3].setValue("æ¯çº¿ç”µå‹é«˜");break;
+			default:txt[3].setValue("è®¾å¤‡æ­£å¸¸");break;}
 			
 			txt[4].setTitle("");txt[4].setisWrite(false);
 			txt[4].settxtItem1("");txt[4].settxtItem2("");txt[4].settxtItem3("");txt[4].setindex(0);
 			switch (v30000[22]){
-			case 1:txt[4].setValue("µ¼Í¨½ÇÏŞÖÆ");break;
-			case 2:txt[4].setValue("¿ØÖÆÆµÂÊÏŞÖÆ");break;
-			case 3:txt[4].setValue("Ò»´ÎµçÑ¹ÏŞÖÆ");break;
-			case 4:txt[4].setValue("Ò»´ÎµçÁ÷ÏŞÖÆ");break;
-			case 5:txt[4].setValue("Ä¸ÏßµçÑ¹ÏŞÖÆ");break;
-			case 6:txt[4].setValue("Ğ³ÕñµçÁ÷ÏŞÖÆ");break;
-			case 7:txt[4].setValue("¶ş´ÎµçÑ¹ÏŞÖÆ");break;
-			case 8:txt[4].setValue("¶ş´ÎµçÁ÷ÏŞÖÆ");break;
-			case 9:txt[4].setValue("µç³¡ÉÁÂçÏŞÖÆ");break;
-			case 10:txt[4].setValue("ÓÍÎÂÏŞÖÆ");break;
-			case 11:txt[4].setValue("IGBTÎÂ¶ÈÏŞÖÆ");break;
-			case 12:txt[4].setValue("Êä³ö×è¿¹ÏŞÖÆ");break;
-			default:txt[4].setValue("ÎŞ²ÎÊıÏŞÖÆ");break;}
+			case 1:txt[4].setValue("å¯¼é€šè§’é™åˆ¶");break;
+			case 2:txt[4].setValue("æ§åˆ¶é¢‘ç‡é™åˆ¶");break;
+			case 3:txt[4].setValue("ä¸€æ¬¡ç”µå‹é™åˆ¶");break;
+			case 4:txt[4].setValue("ä¸€æ¬¡ç”µæµé™åˆ¶");break;
+			case 5:txt[4].setValue("æ¯çº¿ç”µå‹é™åˆ¶");break;
+			case 6:txt[4].setValue("è°æŒ¯ç”µæµé™åˆ¶");break;
+			case 7:txt[4].setValue("äºŒæ¬¡ç”µå‹é™åˆ¶");break;
+			case 8:txt[4].setValue("äºŒæ¬¡ç”µæµé™åˆ¶");break;
+			case 9:txt[4].setValue("ç”µåœºé—ªç»œé™åˆ¶");break;
+			case 10:txt[4].setValue("æ²¹æ¸©é™åˆ¶");break;
+			case 11:txt[4].setValue("IGBTæ¸©åº¦é™åˆ¶");break;
+			case 12:txt[4].setValue("è¾“å‡ºé˜»æŠ—é™åˆ¶");break;
+			default:txt[4].setValue("æ— å‚æ•°é™åˆ¶");break;}
 			
 			txt[5].setTitle("");txt[5].setisWrite(false);
 			txt[5].settxtItem1("");txt[5].settxtItem2("");txt[5].settxtItem3("");txt[5].setindex(0);
 			switch (v30000[25]){
-			case 1:txt[5].setValue("DCS¿ØÖÆ");break;
-			case 2:txt[5].setValue("Í¨Ñ¶¿ØÖÆ");break;
-			default:txt[5].setValue("ÊÖ¶¯¿ØÖÆ");break;}
+			case 1:txt[5].setValue("DCSæ§åˆ¶");break;
+			case 2:txt[5].setValue("é€šè®¯æ§åˆ¶");break;
+			default:txt[5].setValue("æ‰‹åŠ¨æ§åˆ¶");break;}
 			
-			txt[6].setTitle("±£´æ²ÎÊı");txt[6].setValue("±£´æ²ÎÊı");
+			txt[6].setTitle("ä¿å­˜å‚æ•°");txt[6].setValue("ä¿å­˜å‚æ•°");
 			txt[6].settxtItem1("");txt[6].settxtItem2("");txt[6].settxtItem3("");txt[6].setindex(9);
 			if (v10000[9]){
 				txt[6].setisWrite(true);
@@ -428,28 +428,28 @@ import android.widget.TextView;
 				txt[6].setisWrite(false);
 			}
 			
-			txt[7].setTitle("Çå³ı¹ÊÕÏ");txt[7].setisWrite(true);txt[7].setValue("Çå³ı¹ÊÕÏ");
+			txt[7].setTitle("æ¸…é™¤æ•…éšœ");txt[7].setisWrite(true);txt[7].setValue("æ¸…é™¤æ•…éšœ");
 			txt[7].settxtItem1("");txt[7].settxtItem2("");txt[7].settxtItem3("");txt[7].setindex(6);
 			
-			txt[8].setTitle("¿ª»ú");txt[8].setisWrite(true);txt[8].setValue("¿ª»ú");
+			txt[8].setTitle("å¼€æœº");txt[8].setisWrite(true);txt[8].setValue("å¼€æœº");
 			txt[8].settxtItem1("");txt[8].settxtItem2("");txt[8].settxtItem3("");txt[8].setindex(1);
 			
-			txt[9].setTitle("Í£»ú");txt[9].setisWrite(true);txt[9].setValue("Í£»ú");
+			txt[9].setTitle("åœæœº");txt[9].setisWrite(true);txt[9].setValue("åœæœº");
 			txt[9].settxtItem1("");txt[9].settxtItem2("");txt[9].settxtItem3("");txt[9].setindex(2);
 			
-			txt[10].setTitle("»Ö¸´");txt[10].setisWrite(true);txt[10].setValue("»Ö¸´");
+			txt[10].setTitle("æ¢å¤");txt[10].setisWrite(true);txt[10].setValue("æ¢å¤");
 			txt[10].settxtItem1("");txt[10].settxtItem2("");txt[10].settxtItem3("");txt[10].setindex(3);
 			
-			txt[11].setTitle("ÖĞÖ¹");txt[11].setisWrite(true);txt[11].setValue("ÖĞÖ¹");
+			txt[11].setTitle("ä¸­æ­¢");txt[11].setisWrite(true);txt[11].setValue("ä¸­æ­¢");
 			txt[11].settxtItem1("");txt[11].settxtItem2("");txt[11].settxtItem3("");txt[11].setindex(4);
 			
-			txt[12].setTitle("½µÑ¹");txt[12].setisWrite(true);txt[12].setValue("½µÑ¹");
+			txt[12].setTitle("é™å‹");txt[12].setisWrite(true);txt[12].setValue("é™å‹");
 			txt[12].settxtItem1("");txt[12].settxtItem2("");txt[12].settxtItem3("");txt[12].setindex(5);
 			
-			txt[13].setTitle("ÖØÆôÉè±¸");txt[13].setisWrite(true);txt[13].setValue("ÖØÆô");
+			txt[13].setTitle("é‡å¯è®¾å¤‡");txt[13].setisWrite(true);txt[13].setValue("é‡å¯");
 			txt[13].settxtItem1("");txt[13].settxtItem2("");txt[13].settxtItem3("");txt[13].setindex(6);
 			
-			txt[14].setTitle("±£Áô");txt[14].setisWrite(false);txt[14].setValue("±£Áô");
+			txt[14].setTitle("ä¿ç•™");txt[14].setisWrite(false);txt[14].setValue("ä¿ç•™");
 			txt[14].settxtItem1("");txt[14].settxtItem2("");txt[14].settxtItem3("");txt[14].setindex(0);
 			
 			return txt;
@@ -472,22 +472,22 @@ import android.widget.TextView;
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÊµÊ±Öµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("å®æ—¶å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Âö³åÖµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è„‰å†²å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("·åÖµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("å³°å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÏŞ¶¨Öµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é™å®šå€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[4]=txt;
 			
@@ -496,12 +496,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("µ¼Í¨½Ç(¡ã)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("å¯¼é€šè§’(Â°)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("µ¼Í¨½ÇÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[1]));
+			txt.setTitle("å¯¼é€šè§’å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[1]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
@@ -516,7 +516,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("µ¼Í¨½ÇÏŞ¶¨Öµ(¡ã)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[40]));
+			txt.setTitle("å¯¼é€šè§’é™å®šå€¼(Â°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[40]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(40);
 			txtmap[4]=txt;
 			
@@ -525,17 +525,17 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ò»´ÎµçÑ¹(V)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("ä¸€æ¬¡ç”µå‹(V)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÑ¹ÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[3]));
+			txt.setTitle("ä¸€æ¬¡ç”µå‹å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[3]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÑ¹Âö³åÖµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[13]));
+			txt.setTitle("ä¸€æ¬¡ç”µå‹è„‰å†²å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[13]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[2]=txt;
 			
@@ -545,7 +545,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÑ¹ÏŞ¶¨Öµ(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[42]));
+			txt.setTitle("ä¸€æ¬¡ç”µå‹é™å®šå€¼(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[42]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(42);
 			txtmap[4]=txt;
 			
@@ -554,17 +554,17 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ò»´ÎµçÁ÷(A)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("ä¸€æ¬¡ç”µæµ(A)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷ÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[4]));
+			txt.setTitle("ä¸€æ¬¡ç”µæµå®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[4]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷Âö³åÖµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[14]));
+			txt.setTitle("ä¸€æ¬¡ç”µæµè„‰å†²å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[14]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[2]=txt;
 			
@@ -574,7 +574,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷ÏŞ¶¨Öµ(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[43])+"%");
+			txt.setTitle("ä¸€æ¬¡ç”µæµé™å®šå€¼(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[43])+"%");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(43);
 			txtmap[4]=txt;
 			
@@ -583,27 +583,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¶ş´ÎµçÑ¹(kV)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("äºŒæ¬¡ç”µå‹(kV)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹ÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[7]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[7]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹Âö³åÖµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[17]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹è„‰å†²å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[17]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹·åÖµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[9]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹å³°å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[9]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹ÏŞ¶¨Öµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[46]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹é™å®šå€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[46]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(46);
 			txtmap[4]=txt;
 			
@@ -612,27 +612,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¶ş´ÎµçÁ÷(mA)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("äºŒæ¬¡ç”µæµ(mA)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷ÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[8]));
+			txt.setTitle("äºŒæ¬¡ç”µæµå®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[8]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷Âö³åÖµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[18]));
+			txt.setTitle("äºŒæ¬¡ç”µæµè„‰å†²å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[18]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷·åÖµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[11]));
+			txt.setTitle("äºŒæ¬¡ç”µæµå³°å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[11]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷ÏŞ¶¨Öµ(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[47])+"%");
+			txt.setTitle("äºŒæ¬¡ç”µæµé™å®šå€¼(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[47])+"%");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(47);
 			txtmap[4]=txt;
 			
@@ -641,12 +641,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÓÍÎÂ(¡æ)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ²¹æ¸©(â„ƒ)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÓÍÎÂÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[19]));
+			txt.setTitle("æ²¹æ¸©å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[19]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
@@ -661,7 +661,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÓÍÎÂÏŞ¶¨Öµ(¡æ)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[48]));
+			txt.setTitle("æ²¹æ¸©é™å®šå€¼(â„ƒ)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[48]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(48);
 			txtmap[4]=txt;
 			
@@ -670,12 +670,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¸¨ÖúÄ£ÄâÁ¿");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è¾…åŠ©æ¨¡æ‹Ÿé‡");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¸¨ÖúÄ£ÄâÁ¿ÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[20]));
+			txt.setTitle("è¾…åŠ©æ¨¡æ‹Ÿé‡å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[20]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
@@ -699,12 +699,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÉÁÂçÆµÂÊ(spm)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é—ªç»œé¢‘ç‡(spm)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÉÁÂçÆµÂÊÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[21]));
+			txt.setTitle("é—ªç»œé¢‘ç‡å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[21]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
@@ -719,7 +719,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÉÁÂçÆµÂÊÏŞ¶¨Öµ(spm)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[49]));
+			txt.setTitle("é—ªç»œé¢‘ç‡é™å®šå€¼(spm)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[49]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(49);
 			txtmap[4]=txt;
 			
@@ -728,7 +728,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÉÁÂç·âËø(pls)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é—ªç»œå°é”(pls)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -748,7 +748,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÉÁÂç·âËøÏŞ¶¨Öµ(pls)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[50]));
+			txt.setTitle("é—ªç»œå°é”é™å®šå€¼(pls)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[50]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(50);
 			txtmap[4]=txt;
 			
@@ -757,7 +757,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("³äµç±È(pls)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("å……ç”µæ¯”(pls)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -777,7 +777,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("³äµç±ÈÏŞ¶¨Öµ(pls)");txt.setisWrite(true);txt.setValue("1:"+String.valueOf(v40000[51]));
+			txt.setTitle("å……ç”µæ¯”é™å®šå€¼(pls)");txt.setisWrite(true);txt.setValue("1:"+String.valueOf(v40000[51]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(51);
 			txtmap[4]=txt;
 			
@@ -786,7 +786,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("µçÑ¹ÉÁÂç(kV)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("ç”µå‹é—ªç»œ(kV)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -806,7 +806,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("µçÑ¹ÉÁÂçÏŞ¶¨Öµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[54]));
+			txt.setTitle("ç”µå‹é—ªç»œé™å®šå€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[54]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(54);
 			txtmap[4]=txt;
 			
@@ -815,7 +815,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("µçÁ÷ÉÁÂç(%)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("ç”µæµé—ªç»œ(%)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -835,7 +835,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("µçÁ÷ÉÁÂçÏŞ¶¨Öµ(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[55]));
+			txt.setTitle("ç”µæµé—ªç»œé™å®šå€¼(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[55]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(55);
 			txtmap[4]=txt;
 			
@@ -844,7 +844,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÉÁÂçÏÂ½µ(¡ã)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é—ªç»œä¸‹é™(Â°)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -864,7 +864,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÉÁÂçÏÂ½µÏŞ¶¨Öµ(¡ã)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[56]));
+			txt.setTitle("é—ªç»œä¸‹é™é™å®šå€¼(Â°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[56]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(56);
 			txtmap[4]=txt;
 			
@@ -873,7 +873,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Æ«Àø´Å(%)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("ååŠ±ç£(%)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -893,7 +893,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Æ«Àø´ÅÏŞ¶¨Öµ(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[57]));
+			txt.setTitle("ååŠ±ç£é™å®šå€¼(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[57]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(57);
 			txtmap[4]=txt;
 			
@@ -902,7 +902,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Êä³öÇ·Ñ¹(kV)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è¾“å‡ºæ¬ å‹(kV)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -922,7 +922,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Êä³öÇ·Ñ¹ÏŞ¶¨Öµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[58]));
+			txt.setTitle("è¾“å‡ºæ¬ å‹é™å®šå€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[58]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(58);
 			txtmap[4]=txt;
 			
@@ -931,7 +931,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Êä³ö¿ªÂ·(kV)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è¾“å‡ºå¼€è·¯(kV)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -951,7 +951,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Êä³ö¿ªÂ·ÏŞ¶¨Öµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[59]));
+			txt.setTitle("è¾“å‡ºå¼€è·¯é™å®šå€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[59]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(59);
 			txtmap[4]=txt;
 			
@@ -965,22 +965,22 @@ import android.widget.TextView;
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Á¿³ÌÖµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é‡ç¨‹å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¶î¶¨Öµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é¢å®šå€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ğ£×¼Öµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ ¡å‡†å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ğ£×¼Öµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ ¡å‡†å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[4]=txt;
 			
@@ -989,17 +989,17 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ò»´ÎµçÑ¹(V)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("ä¸€æ¬¡ç”µå‹(V)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÑ¹Á¿³ÌÖµ(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[17]));
+			txt.setTitle("ä¸€æ¬¡ç”µå‹é‡ç¨‹å€¼(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[17]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(17);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÑ¹¶î¶¨Öµ(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[34]));
+			txt.setTitle("ä¸€æ¬¡ç”µå‹é¢å®šå€¼(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[34]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(34);
 			txtmap[2]=txt;
 			
@@ -1009,7 +1009,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÑ¹Ğ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[24])+"¡ë");
+			txt.setTitle("ä¸€æ¬¡ç”µå‹æ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[24])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(24);
 			txtmap[4]=txt;
 			
@@ -1018,17 +1018,17 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ò»´ÎµçÁ÷(A)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("ä¸€æ¬¡ç”µæµ(A)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷Á¿³ÌÖµ(A)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[18]));
+			txt.setTitle("ä¸€æ¬¡ç”µæµé‡ç¨‹å€¼(A)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[18]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(18);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷¶î¶¨Öµ(A)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[35]));
+			txt.setTitle("ä¸€æ¬¡ç”µæµé¢å®šå€¼(A)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[35]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(35);
 			txtmap[2]=txt;
 			
@@ -1038,7 +1038,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷Ğ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[25])+"¡ë");
+			txt.setTitle("ä¸€æ¬¡ç”µæµæ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[25])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(25);
 			txtmap[4]=txt;
 			
@@ -1047,17 +1047,17 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¶ş´ÎµçÑ¹(kV)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("äºŒæ¬¡ç”µå‹(kV)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹Á¿³ÌÖµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[21]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹é‡ç¨‹å€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[21]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(21);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹¶î¶¨Öµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[38]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹é¢å®šå€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[38]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(38);
 			txtmap[2]=txt;
 			
@@ -1067,7 +1067,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹Ğ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[28])+"¡ë");
+			txt.setTitle("äºŒæ¬¡ç”µå‹æ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[28])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(28);
 			txtmap[4]=txt;
 			
@@ -1076,23 +1076,23 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¶ş´ÎµçÁ÷(mA)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("äºŒæ¬¡ç”µæµ(mA)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷Á¿³ÌÖµ(mA)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[22]));
+			txt.setTitle("äºŒæ¬¡ç”µæµé‡ç¨‹å€¼(mA)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[22]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(22);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷¶î¶¨Öµ(mA)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[39]));
+			txt.setTitle("äºŒæ¬¡ç”µæµé¢å®šå€¼(mA)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[39]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(39);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
             if (v10000[35]==true){
-                txt.setTitle("½â³ı´úÂë0-65535");txt.setisWrite(true);txt.setValue(String.valueOf(v30000[154]));
+                txt.setTitle("è§£é™¤ä»£ç 0-65535");txt.setisWrite(true);txt.setValue(String.valueOf(v30000[154]));
                 txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(60);
             }
             else{
@@ -1102,7 +1102,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷Ğ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[29])+"¡ë");
+			txt.setTitle("äºŒæ¬¡ç”µæµæ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[29])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(29);
 			txtmap[4]=txt;
 			
@@ -1111,12 +1111,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÓÍÎÂ(¡æ)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ²¹æ¸©(â„ƒ)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÓÍÎÂÁ¿³ÌÖµ(¡æ)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[23]));
+			txt.setTitle("æ²¹æ¸©é‡ç¨‹å€¼(â„ƒ)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[23]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(23);
 			txtmap[1]=txt;
 			
@@ -1126,12 +1126,12 @@ import android.widget.TextView;
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÓÍÎÂÏÂÏŞĞ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[30])+"¡ë");
+			txt.setTitle("æ²¹æ¸©ä¸‹é™æ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[30])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(30);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÓÍÎÂÉÏÏŞĞ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[31])+"¡ë");
+			txt.setTitle("æ²¹æ¸©ä¸Šé™æ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[31])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(31);
 			txtmap[4]=txt;
 			
@@ -1140,7 +1140,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¸¨ÖúÄ£ÄâÁ¿");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è¾…åŠ©æ¨¡æ‹Ÿé‡");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -1155,12 +1155,12 @@ import android.widget.TextView;
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¸¨ÖúÄ£ÄâÁ¿ÏÂÏŞĞ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[32])+"¡ë");
+			txt.setTitle("è¾…åŠ©æ¨¡æ‹Ÿé‡ä¸‹é™æ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[32])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(32);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¸¨ÖúÄ£ÄâÁ¿ÉÏÏŞĞ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[33])+"¡ë");
+			txt.setTitle("è¾…åŠ©æ¨¡æ‹Ÿé‡ä¸Šé™æ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[33])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(33);
 			txtmap[4]=txt;
 			
@@ -1169,7 +1169,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Í¨ĞÅÉèÖÃ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é€šä¿¡è®¾ç½®");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -1198,27 +1198,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Éè±¸Ãû");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è®¾å¤‡å");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Â¯ºÅ");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[2])+"#Â¯");
+			txt.setTitle("ç‚‰å·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[2])+"#ç‚‰");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(2);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("³ı³¾Æ÷ºÅ");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[3])+"#³ı³¾Æ÷");
+			txt.setTitle("é™¤å°˜å™¨å·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[3])+"#é™¤å°˜å™¨");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(3);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Í¨µÀºÅ");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[4])+"#Í¨µÀ");
+			txt.setTitle("é€šé“å·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[4])+"#é€šé“");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(4);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("µç³¡ºÅ");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[5])+"#µç³¡");
+			txt.setTitle("ç”µåœºå·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[5])+"#ç”µåœº");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(5);
 			txtmap[4]=txt;
 			
@@ -1227,12 +1227,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Éè±¸ºÅ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è®¾å¤‡å·");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Éè±¸ºÅ");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[1]));
+			txt.setTitle("è®¾å¤‡å·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[1]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(1);
 			txtmap[1]=txt;
 			
@@ -1256,12 +1256,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("CANµØÖ·");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("CANåœ°å€");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("CANµØÖ·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[6]));
+			txt.setTitle("CANåœ°å€");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[6]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(6);
 			txtmap[1]=txt;
 			
@@ -1285,27 +1285,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("IPµØÖ·");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("IPåœ°å€");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("IPµØÖ·1");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[7]));
+			txt.setTitle("IPåœ°å€1");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[7]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(7);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("IPµØÖ·2");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[8]));
+			txt.setTitle("IPåœ°å€2");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[8]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(8);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("IPµØÖ·3");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[9]));
+			txt.setTitle("IPåœ°å€3");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[9]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(9);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("IPµØÖ·4");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[10]));
+			txt.setTitle("IPåœ°å€4");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[10]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(10);
 			txtmap[4]=txt;
 			
@@ -1314,27 +1314,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("MASKµØÖ·");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("MASKåœ°å€");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("MASKµØÖ·1");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[11]));
+			txt.setTitle("MASKåœ°å€1");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[11]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(11);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("MASKµØÖ·2");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[12]));
+			txt.setTitle("MASKåœ°å€2");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[12]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(12);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("MASKµØÖ·3");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[13]));
+			txt.setTitle("MASKåœ°å€3");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[13]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(13);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("MASKµØÖ·4");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[14]));
+			txt.setTitle("MASKåœ°å€4");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[14]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(14);
 			txtmap[4]=txt;
 			
@@ -1343,27 +1343,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Éè±¸ÀàĞÍ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è®¾å¤‡ç±»å‹");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
 			switch (v40000[15]){
 			case 1:
-				txt.setValue("¹¤Æµµ¥Ïà");
+				txt.setValue("å·¥é¢‘å•ç›¸");
 				break;
 			case 2:
-				txt.setValue("¹¤ÆµÈıÏà");
+				txt.setValue("å·¥é¢‘ä¸‰ç›¸");
 				break;
 			case 3:
-				txt.setValue("¸ßÆµµçÔ´");
+				txt.setValue("é«˜é¢‘ç”µæº");
 				break;
 			default:
-				txt.setValue("Î´ÖªÉè±¸");
+				txt.setValue("æœªçŸ¥è®¾å¤‡");
 				break;
 			}
-			txt.setTitle("Éè±¸ÀàĞÍ");txt.setisWrite(true);
-			txt.settxtItem1("¹¤Æµµ¥Ïà");txt.settxtItem2("¹¤ÆµÈıÏà");txt.settxtItem3("¸ßÆµµçÔ´");txt.setindex(15);
+			txt.setTitle("è®¾å¤‡ç±»å‹");txt.setisWrite(true);
+			txt.settxtItem1("å·¥é¢‘å•ç›¸");txt.settxtItem2("å·¥é¢‘ä¸‰ç›¸");txt.settxtItem3("é«˜é¢‘ç”µæº");txt.setindex(15);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
@@ -1386,21 +1386,21 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("DCS¿ØÖÆ·½Ê½");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("DCSæ§åˆ¶æ–¹å¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
 			switch (v40000[16]){
 			case 1:
-				txt.setValue("DCS¿ØÖÆ");
+				txt.setValue("DCSæ§åˆ¶");
 				break;
 			default:
-				txt.setValue("Í¨Ñ¶¿ØÖÆ");
+				txt.setValue("é€šè®¯æ§åˆ¶");
 				break;
 			}
-			txt.setTitle("DCS¿ØÖÆ·½Ê½");txt.setisWrite(true);
-			txt.settxtItem1("Í¨Ñ¶¿ØÖÆ");txt.settxtItem2("DCS¿ØÖÆ");txt.settxtItem3("");txt.setindex(16);
+			txt.setTitle("DCSæ§åˆ¶æ–¹å¼");txt.setisWrite(true);
+			txt.settxtItem1("é€šè®¯æ§åˆ¶");txt.settxtItem2("DCSæ§åˆ¶");txt.settxtItem3("");txt.setindex(16);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
@@ -1435,27 +1435,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("µ¥Âö³å²âÊÔ");txt.setisWrite(true);txt.setValue("µ¥Âö³å²âÊÔ");
+			txt.setTitle("å•è„‰å†²æµ‹è¯•");txt.setisWrite(true);txt.setValue("å•è„‰å†²æµ‹è¯•");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(8);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÊµÊ±Öµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("å®æ—¶å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Âö³åÖµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è„‰å†²å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("·åÖµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("å³°å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÏŞ¶¨Öµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é™å®šå€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[4]=txt;
 			
@@ -1464,12 +1464,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¿ØÖÆÆµÂÊ(Hz)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ§åˆ¶é¢‘ç‡(Hz)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¿ØÖÆÆµÂÊÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[2]));
+			txt.setTitle("æ§åˆ¶é¢‘ç‡å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[2]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
@@ -1484,7 +1484,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¿ØÖÆÆµÂÊÏŞ¶¨Öµ(Hz)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[41]));
+			txt.setTitle("æ§åˆ¶é¢‘ç‡é™å®šå€¼(Hz)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[41]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(41);
 			txtmap[4]=txt;
 			
@@ -1493,12 +1493,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ä¸ÏßµçÑ¹(V)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ¯çº¿ç”µå‹(V)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ä¸ÏßµçÑ¹ÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[5]));
+			txt.setTitle("æ¯çº¿ç”µå‹å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[5]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
@@ -1513,7 +1513,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ä¸ÏßµçÑ¹ÏŞ¶¨Öµ(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[44]));
+			txt.setTitle("æ¯çº¿ç”µå‹é™å®šå€¼(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[44]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(44);
 			txtmap[4]=txt;
 			
@@ -1522,12 +1522,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ò»´ÎµçÁ÷(A)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("ä¸€æ¬¡ç”µæµ(A)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷ÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[4]));
+			txt.setTitle("ä¸€æ¬¡ç”µæµå®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[4]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
@@ -1542,7 +1542,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷ÏŞ¶¨Öµ(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[43])+"%");
+			txt.setTitle("ä¸€æ¬¡ç”µæµé™å®šå€¼(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[43])+"%");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(43);
 			txtmap[4]=txt;
 			
@@ -1551,27 +1551,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¶ş´ÎµçÑ¹(kV)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("äºŒæ¬¡ç”µå‹(kV)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹ÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[7]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[7]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹Âö³åÖµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[17]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹è„‰å†²å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[17]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹·åÖµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[9]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹å³°å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[9]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹ÏŞ¶¨Öµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[46]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹é™å®šå€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[46]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(46);
 			txtmap[4]=txt;
 			
@@ -1580,27 +1580,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¶ş´ÎµçÁ÷(mA)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("äºŒæ¬¡ç”µæµ(mA)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷ÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[8]));
+			txt.setTitle("äºŒæ¬¡ç”µæµå®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[8]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷Âö³åÖµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[18]));
+			txt.setTitle("äºŒæ¬¡ç”µæµè„‰å†²å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[18]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷·åÖµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[11]));
+			txt.setTitle("äºŒæ¬¡ç”µæµå³°å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[11]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷ÏŞ¶¨Öµ(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[47])+"%");
+			txt.setTitle("äºŒæ¬¡ç”µæµé™å®šå€¼(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[47])+"%");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(47);
 			txtmap[4]=txt;
 			
@@ -1609,12 +1609,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÓÍÎÂ(¡æ)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ²¹æ¸©(â„ƒ)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÓÍÎÂÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[19]));
+			txt.setTitle("æ²¹æ¸©å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[19]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
@@ -1629,7 +1629,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÓÍÎÂÏŞ¶¨Öµ(¡æ)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[48]));
+			txt.setTitle("æ²¹æ¸©é™å®šå€¼(â„ƒ)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[48]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(48);
 			txtmap[4]=txt;
 			
@@ -1638,12 +1638,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÉÁÂçÆµÂÊ(spm)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é—ªç»œé¢‘ç‡(spm)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÉÁÂçÆµÂÊÊµÊ±Öµ");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[21]));
+			txt.setTitle("é—ªç»œé¢‘ç‡å®æ—¶å€¼");txt.setisWrite(false);txt.setValue(String.valueOf(v30000[21]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
@@ -1658,7 +1658,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÉÁÂçÆµÂÊÏŞ¶¨Öµ(spm)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[49]));
+			txt.setTitle("é—ªç»œé¢‘ç‡é™å®šå€¼(spm)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[49]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(49);
 			txtmap[4]=txt;
 			
@@ -1667,7 +1667,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÉÁÂç·âËø(ms)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é—ªç»œå°é”(ms)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -1687,7 +1687,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÉÁÂç·âËøÏŞ¶¨Öµ(ms)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[50]));
+			txt.setTitle("é—ªç»œå°é”é™å®šå€¼(ms)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[50]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(50);
 			txtmap[4]=txt;
 			
@@ -1696,7 +1696,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("³äµç±È(ms)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("å……ç”µæ¯”(ms)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -1711,12 +1711,12 @@ import android.widget.TextView;
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("³äµç±È¸ßÄÜÏŞ¶¨Öµ(ms)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[52]));
+			txt.setTitle("å……ç”µæ¯”é«˜èƒ½é™å®šå€¼(ms)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[52]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(52);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("³äµç±ÈµÍÄÜÏŞ¶¨Öµ(ms)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[53]));
+			txt.setTitle("å……ç”µæ¯”ä½èƒ½é™å®šå€¼(ms)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[53]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(53);
 			txtmap[4]=txt;
 			
@@ -1725,7 +1725,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÉÁÂçÏÂ½µ(%)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é—ªç»œä¸‹é™(%)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -1745,7 +1745,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÉÁÂçÏÂ½µÏŞ¶¨Öµ(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[56]));
+			txt.setTitle("é—ªç»œä¸‹é™é™å®šå€¼(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[56]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(56);
 			txtmap[4]=txt;
 			
@@ -1754,7 +1754,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÉÁÂçÅĞ¶Ï(%)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é—ªç»œåˆ¤æ–­(%)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -1774,7 +1774,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÉÁÂçÅĞ¶ÏÏŞ¶¨Öµ(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[57]));
+			txt.setTitle("é—ªç»œåˆ¤æ–­é™å®šå€¼(%)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[57]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(57);
 			txtmap[4]=txt;
 			
@@ -1783,7 +1783,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Êä³öÇ·Ñ¹(kV)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è¾“å‡ºæ¬ å‹(kV)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -1803,7 +1803,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Êä³öÇ·Ñ¹ÏŞ¶¨Öµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[58]));
+			txt.setTitle("è¾“å‡ºæ¬ å‹é™å®šå€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[58]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(58);
 			txtmap[4]=txt;
 			
@@ -1812,7 +1812,7 @@ import android.widget.TextView;
             txtmap=new txtItemType[5];
 
             txt=new txtItemType();
-            txt.setTitle("");txt.setisWrite(false);txt.setValue("Êä³ö¿ªÂ·(kV)");
+            txt.setTitle("");txt.setisWrite(false);txt.setValue("è¾“å‡ºå¼€è·¯(kV)");
             txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
             txtmap[0]=txt;
 
@@ -1832,7 +1832,7 @@ import android.widget.TextView;
             txtmap[3]=txt;
 
             txt=new txtItemType();
-            txt.setTitle("Êä³ö¿ªÂ·ÏŞ¶¨Öµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[59]));
+            txt.setTitle("è¾“å‡ºå¼€è·¯é™å®šå€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[59]));
             txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(59);
             txtmap[4]=txt;
 
@@ -1846,22 +1846,22 @@ import android.widget.TextView;
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Á¿³ÌÖµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é‡ç¨‹å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¶î¶¨Öµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é¢å®šå€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ğ£×¼Öµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ ¡å‡†å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ğ£×¼Öµ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ ¡å‡†å€¼");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[4]=txt;
 			
@@ -1870,17 +1870,17 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ä¸ÏßµçÑ¹(V)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ¯çº¿ç”µå‹(V)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ä¸ÏßµçÑ¹Á¿³ÌÖµ(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[19]));
+			txt.setTitle("æ¯çº¿ç”µå‹é‡ç¨‹å€¼(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[19]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(19);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ä¸ÏßµçÑ¹¶î¶¨Öµ(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[36]));
+			txt.setTitle("æ¯çº¿ç”µå‹é¢å®šå€¼(V)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[36]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(36);
 			txtmap[2]=txt;
 			
@@ -1890,7 +1890,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ä¸ÏßµçÑ¹Ğ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[26])+"¡ë");
+			txt.setTitle("æ¯çº¿ç”µå‹æ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[26])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(26);
 			txtmap[4]=txt;
 			
@@ -1899,17 +1899,17 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Ò»´ÎµçÁ÷(A)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("ä¸€æ¬¡ç”µæµ(A)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷Á¿³ÌÖµ(A)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[18]));
+			txt.setTitle("ä¸€æ¬¡ç”µæµé‡ç¨‹å€¼(A)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[18]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(18);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷¶î¶¨Öµ(A)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[35]));
+			txt.setTitle("ä¸€æ¬¡ç”µæµé¢å®šå€¼(A)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[35]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(35);
 			txtmap[2]=txt;
 			
@@ -1919,7 +1919,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Ò»´ÎµçÁ÷Ğ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[25])+"¡ë");
+			txt.setTitle("ä¸€æ¬¡ç”µæµæ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[25])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(25);
 			txtmap[4]=txt;
 			
@@ -1928,17 +1928,17 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¶ş´ÎµçÑ¹(kV)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("äºŒæ¬¡ç”µå‹(kV)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹Á¿³ÌÖµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[21]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹é‡ç¨‹å€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[21]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(21);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹¶î¶¨Öµ(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[38]));
+			txt.setTitle("äºŒæ¬¡ç”µå‹é¢å®šå€¼(kV)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[38]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(38);
 			txtmap[2]=txt;
 			
@@ -1948,7 +1948,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÑ¹Ğ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[28])+"¡ë");
+			txt.setTitle("äºŒæ¬¡ç”µå‹æ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[28])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(28);
 			txtmap[4]=txt;
 			
@@ -1957,23 +1957,23 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("¶ş´ÎµçÁ÷(mA)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("äºŒæ¬¡ç”µæµ(mA)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷Á¿³ÌÖµ(mA)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[22]));
+			txt.setTitle("äºŒæ¬¡ç”µæµé‡ç¨‹å€¼(mA)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[22]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(22);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷¶î¶¨Öµ(mA)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[39]));
+			txt.setTitle("äºŒæ¬¡ç”µæµé¢å®šå€¼(mA)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[39]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(39);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
             if (v10000[35]==true){
-                txt.setTitle("½â³ı´úÂë0-65535");txt.setisWrite(true);txt.setValue(String.valueOf(v30000[154]));
+                txt.setTitle("è§£é™¤ä»£ç 0-65535");txt.setisWrite(true);txt.setValue(String.valueOf(v30000[154]));
                 txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(60);
             }
             else{
@@ -1983,7 +1983,7 @@ import android.widget.TextView;
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("¶ş´ÎµçÁ÷Ğ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[29])+"¡ë");
+			txt.setTitle("äºŒæ¬¡ç”µæµæ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[29])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(29);
 			txtmap[4]=txt;
 			
@@ -1992,12 +1992,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("ÓÍÎÂ(¡æ)");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("æ²¹æ¸©(â„ƒ)");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÓÍÎÂÁ¿³ÌÖµ(¡æ)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[23]));
+			txt.setTitle("æ²¹æ¸©é‡ç¨‹å€¼(â„ƒ)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[23]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(23);
 			txtmap[1]=txt;
 			
@@ -2007,12 +2007,12 @@ import android.widget.TextView;
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÓÍÎÂÏÂÏŞĞ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[30])+"¡ë");
+			txt.setTitle("æ²¹æ¸©ä¸‹é™æ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[30])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(30);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("ÓÍÎÂÉÏÏŞĞ£×¼Öµ(¡ë)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[31])+"¡ë");
+			txt.setTitle("æ²¹æ¸©ä¸Šé™æ ¡å‡†å€¼(â€°)");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[31])+"â€°");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(31);
 			txtmap[4]=txt;
 			
@@ -2021,7 +2021,7 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Í¨ĞÅÉèÖÃ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("é€šä¿¡è®¾ç½®");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
@@ -2050,27 +2050,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Éè±¸Ãû");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è®¾å¤‡å");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Â¯ºÅ");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[2])+"#Â¯");
+			txt.setTitle("ç‚‰å·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[2])+"#ç‚‰");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(2);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("³ı³¾Æ÷ºÅ");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[3])+"#³ı³¾Æ÷");
+			txt.setTitle("é™¤å°˜å™¨å·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[3])+"#é™¤å°˜å™¨");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(3);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Í¨µÀºÅ");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[4])+"#Í¨µÀ");
+			txt.setTitle("é€šé“å·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[4])+"#é€šé“");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(4);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("µç³¡ºÅ");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[5])+"#µç³¡");
+			txt.setTitle("ç”µåœºå·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[5])+"#ç”µåœº");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(5);
 			txtmap[4]=txt;
 			
@@ -2079,12 +2079,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Éè±¸ºÅ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è®¾å¤‡å·");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("Éè±¸ºÅ");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[1]));
+			txt.setTitle("è®¾å¤‡å·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[1]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(1);
 			txtmap[1]=txt;
 			
@@ -2108,12 +2108,12 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("CANµØÖ·");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("CANåœ°å€");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("CANµØÖ·");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[6]));
+			txt.setTitle("CANåœ°å€");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[6]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(6);
 			txtmap[1]=txt;
 			
@@ -2137,27 +2137,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("IPµØÖ·");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("IPåœ°å€");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("IPµØÖ·1");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[7]));
+			txt.setTitle("IPåœ°å€1");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[7]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(7);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("IPµØÖ·2");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[8]));
+			txt.setTitle("IPåœ°å€2");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[8]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(8);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("IPµØÖ·3");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[9]));
+			txt.setTitle("IPåœ°å€3");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[9]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(9);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("IPµØÖ·4");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[10]));
+			txt.setTitle("IPåœ°å€4");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[10]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(10);
 			txtmap[4]=txt;
 			
@@ -2166,27 +2166,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("MASKµØÖ·");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("MASKåœ°å€");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("MASKµØÖ·1");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[11]));
+			txt.setTitle("MASKåœ°å€1");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[11]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(11);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("MASKµØÖ·2");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[12]));
+			txt.setTitle("MASKåœ°å€2");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[12]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(12);
 			txtmap[2]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("MASKµØÖ·3");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[13]));
+			txt.setTitle("MASKåœ°å€3");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[13]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(13);
 			txtmap[3]=txt;
 			
 			txt=new txtItemType();
-			txt.setTitle("MASKµØÖ·4");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[14]));
+			txt.setTitle("MASKåœ°å€4");txt.setisWrite(true);txt.setValue(String.valueOf(v40000[14]));
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(14);
 			txtmap[4]=txt;
 			
@@ -2195,27 +2195,27 @@ import android.widget.TextView;
 			txtmap=new txtItemType[5];
 			
 			txt=new txtItemType();
-			txt.setTitle("");txt.setisWrite(false);txt.setValue("Éè±¸ÀàĞÍ");
+			txt.setTitle("");txt.setisWrite(false);txt.setValue("è®¾å¤‡ç±»å‹");
 			txt.settxtItem1("");txt.settxtItem2("");txt.settxtItem3("");txt.setindex(0);
 			txtmap[0]=txt;
 			
 			txt=new txtItemType();
 			switch (v40000[15]){
 			case 1:
-				txt.setValue("¹¤Æµµ¥Ïà");
+				txt.setValue("å·¥é¢‘å•ç›¸");
 				break;
 			case 2:
-				txt.setValue("¹¤ÆµÈıÏà");
+				txt.setValue("å·¥é¢‘ä¸‰ç›¸");
 				break;
 			case 3:
-				txt.setValue("¸ßÆµµçÔ´");
+				txt.setValue("é«˜é¢‘ç”µæº");
 				break;
 			default:
-				txt.setValue("Î´ÖªÉè±¸");
+				txt.setValue("æœªçŸ¥è®¾å¤‡");
 				break;
 			}
-			txt.setTitle("Éè±¸ÀàĞÍ");txt.setisWrite(true);
-			txt.settxtItem1("¹¤Æµµ¥Ïà");txt.settxtItem2("¹¤ÆµÈıÏà");txt.settxtItem3("¸ßÆµµçÔ´");txt.setindex(15);
+			txt.setTitle("è®¾å¤‡ç±»å‹");txt.setisWrite(true);
+			txt.settxtItem1("å·¥é¢‘å•ç›¸");txt.settxtItem2("å·¥é¢‘ä¸‰ç›¸");txt.settxtItem3("é«˜é¢‘ç”µæº");txt.setindex(15);
 			txtmap[1]=txt;
 			
 			txt=new txtItemType();

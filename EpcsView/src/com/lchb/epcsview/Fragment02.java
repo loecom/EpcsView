@@ -175,16 +175,16 @@ import android.widget.TextView;
 				case R.id.btnSinglePulseTest:
                     if (globalvar.getv40000(15)!=1&&globalvar.getv40000(15)!=2){
                         new AlertDialog.Builder(getActivity())
-                                .setTitle("µ¥Âö³å²âÊÔ")
-                                .setMessage("µ¥Âö³å²âÊÔ")
+                                .setTitle("å•è„‰å†²æµ‹è¯•")
+                                .setMessage("å•è„‰å†²æµ‹è¯•")
                                 .setCancelable(false)
-                                .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+                                .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         new mbWriteThread(getActivity(), mHandler, 0, 7, 1).start();
                                     }
                                 })
-                                .setNegativeButton("È¡Ïû", null).show();
+                                .setNegativeButton("å–æ¶ˆ", null).show();
                     }
 					break;
 				case R.id.txtCtrlFrequencySet:
@@ -192,11 +192,11 @@ import android.widget.TextView;
                     if (globalvar.getv40000(15)==1||globalvar.getv40000(15)==2){
                         input.setText(String.valueOf(globalvar.getv40000(40)));
                         new AlertDialog.Builder(getActivity())
-                                .setTitle("ĞŞ¸Ä²ÎÊı")
-                                .setMessage("µ¼Í¨½ÇÏŞ¶¨Öµ(¡ã)")
+                                .setTitle("ä¿®æ”¹å‚æ•°")
+                                .setMessage("å¯¼é€šè§’é™å®šå€¼(Â°)")
                                 .setView(input)
                                 .setCancelable(false)
-                                .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+                                .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         if (input.getText().toString().equals("")){}
@@ -204,16 +204,16 @@ import android.widget.TextView;
                                             new mbWriteThread(getActivity(), mHandler, 1, 39, Integer.parseInt(input.getText().toString())).start();
                                     }
                                 })
-                                .setNegativeButton("È¡Ïû", null).show();
+                                .setNegativeButton("å–æ¶ˆ", null).show();
                     }
                     else{
                         input.setText(String.valueOf(globalvar.getv40000(41)));
                         new AlertDialog.Builder(getActivity())
-                                .setTitle("ĞŞ¸Ä²ÎÊı")
-                                .setMessage("¿ØÖÆÆµÂÊÏŞ¶¨Öµ(Hz)")
+                                .setTitle("ä¿®æ”¹å‚æ•°")
+                                .setMessage("æ§åˆ¶é¢‘ç‡é™å®šå€¼(Hz)")
                                 .setView(input)
                                 .setCancelable(false)
-                                .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+                                .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         if (input.getText().toString().equals("")){}
@@ -221,7 +221,7 @@ import android.widget.TextView;
                                             new mbWriteThread(getActivity(), mHandler, 1, 40, Integer.parseInt(input.getText().toString())).start();
                                     }
                                 })
-                                .setNegativeButton("È¡Ïû", null).show();
+                                .setNegativeButton("å–æ¶ˆ", null).show();
                     }
 	        		msg.sendToTarget();
 					break;
@@ -230,11 +230,11 @@ import android.widget.TextView;
                         v.setBackgroundColor(Color.CYAN);
                         input.setText(String.valueOf(globalvar.getv40000(52)));
                         new AlertDialog.Builder(getActivity())
-                                .setTitle("ĞŞ¸Ä²ÎÊı")
-                                .setMessage("³äµç±È¸ßÄÜÏŞ¶¨Öµ(ms)")
+                                .setTitle("ä¿®æ”¹å‚æ•°")
+                                .setMessage("å……ç”µæ¯”é«˜èƒ½é™å®šå€¼(ms)")
                                 .setView(input)
                                 .setCancelable(false)
-                                .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+                                .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         if (input.getText().toString().equals("")){}
@@ -242,7 +242,7 @@ import android.widget.TextView;
                                             new mbWriteThread(getActivity(), mHandler, 1, 51, Integer.parseInt(input.getText().toString())).start();
                                     }
                                 })
-                                .setNegativeButton("È¡Ïû", null).show();
+                                .setNegativeButton("å–æ¶ˆ", null).show();
                         msg.sendToTarget();
                     }
 					break;
@@ -251,11 +251,11 @@ import android.widget.TextView;
                     if (globalvar.getv40000(15)==1||globalvar.getv40000(15)==2){
                         input.setText(String.valueOf(globalvar.getv40000(51)));
                         new AlertDialog.Builder(getActivity())
-                                .setTitle("ĞŞ¸Ä²ÎÊı")
-                                .setMessage("³äµç±ÈµÍÄÜÏŞ¶¨Öµ(pls)")
+                                .setTitle("ä¿®æ”¹å‚æ•°")
+                                .setMessage("å……ç”µæ¯”ä½èƒ½é™å®šå€¼(pls)")
                                 .setView(input)
                                 .setCancelable(false)
-                                .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+                                .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         if (input.getText().toString().equals("")){}
@@ -263,16 +263,16 @@ import android.widget.TextView;
                                             new mbWriteThread(getActivity(), mHandler, 1, 50, Integer.parseInt(input.getText().toString())).start();
                                     }
                                 })
-                                .setNegativeButton("È¡Ïû", null).show();
+                                .setNegativeButton("å–æ¶ˆ", null).show();
                     }
                     else{
                         input.setText(String.valueOf(globalvar.getv40000(53)));
                         new AlertDialog.Builder(getActivity())
-                                .setTitle("ĞŞ¸Ä²ÎÊı")
-                                .setMessage("³äµç±ÈµÍÄÜÏŞ¶¨Öµ(ms)")
+                                .setTitle("ä¿®æ”¹å‚æ•°")
+                                .setMessage("å……ç”µæ¯”ä½èƒ½é™å®šå€¼(ms)")
                                 .setView(input)
                                 .setCancelable(false)
-                                .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+                                .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
                                         if (input.getText().toString().equals("")){}
@@ -280,7 +280,7 @@ import android.widget.TextView;
                                             new mbWriteThread(getActivity(), mHandler, 1, 52, Integer.parseInt(input.getText().toString())).start();
                                     }
                                 })
-                                .setNegativeButton("È¡Ïû", null).show();
+                                .setNegativeButton("å–æ¶ˆ", null).show();
                     }
 	        		msg.sendToTarget();
 					break;
@@ -301,10 +301,10 @@ import android.widget.TextView;
             		break;
 	        	case WRITEERROR:
 	        		new Builder(getActivity())
-	        		.setTitle("Éè±¸²Ù×÷")
-	        		.setMessage("²Ù×÷Ê§°Ü")
+	        		.setTitle("è®¾å¤‡æ“ä½œ")
+	        		.setMessage("æ“ä½œå¤±è´¥")
 	        		.setCancelable(false)
-	        		.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() { 
+	        		.setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() { 
 	        			@Override 
 	        			public void onClick(DialogInterface dialog, int which) {
 			        } 
@@ -316,12 +316,12 @@ import android.widget.TextView;
             }
         };
         
-        //ÕâÀïµÄHandlerÊµÀı½«ÅäºÏÏÂÃæµÄTimerÊµÀı£¬Íê³É¶¨Ê±¸üĞÂÍ¼±íµÄ¹¦ÄÜ
+        //è¿™é‡Œçš„Handlerå®ä¾‹å°†é…åˆä¸‹é¢çš„Timerå®ä¾‹ï¼Œå®Œæˆå®šæ—¶æ›´æ–°å›¾è¡¨çš„åŠŸèƒ½
 	    @SuppressLint("HandlerLeak")
 		Handler handler=new Handler(){
             @Override
             public void handleMessage(Message msg){
-            	//Ë¢ĞÂÍ¼±í
+            	//åˆ·æ–°å›¾è¡¨
     	        mDatasetA.removeSeries(secVoltageSeriesA);
     	        mDatasetA.removeSeries(secCurrentSeriesA);
     	    	secVoltageSeriesA.clear();
@@ -372,16 +372,16 @@ import android.widget.TextView;
             	super.handleMessage(msg);
                 if (globalvar.getv40000(15)==1||globalvar.getv40000(15)==2){
                     btnSinglePulseTest.setEnabled(false);
-                    txtCtrlFrequencyTitle.setText("µ¼Í¨½Ç");
-                    txtCtrlFrequency.setText(String.valueOf(globalvar.getv30000(1)) + "¡ã");
-                    txtCtrlFrequencySet.setText(String.valueOf(globalvar.getv40000(40)) + "¡ã");
+                    txtCtrlFrequencyTitle.setText("å¯¼é€šè§’");
+                    txtCtrlFrequency.setText(String.valueOf(globalvar.getv30000(1)) + "Â°");
+                    txtCtrlFrequencySet.setText(String.valueOf(globalvar.getv40000(40)) + "Â°");
                     txtChargeRatioHigh.setText("1:");
                     txtChargeRatioLow.setText(String.valueOf(globalvar.getv40000(51)));
                     txtChargeRatioHigh.setBackgroundColor(Color.rgb(183, 222, 232));
                 }
                 else{
                     btnSinglePulseTest.setEnabled(true);
-                    txtCtrlFrequencyTitle.setText("¿ØÖÆÆµÂÊ");
+                    txtCtrlFrequencyTitle.setText("æ§åˆ¶é¢‘ç‡");
                     txtCtrlFrequency.setText(String.valueOf(globalvar.getv30000(2))+"Hz");
                     txtCtrlFrequencySet.setText(String.valueOf(globalvar.getv40000(41)) + "Hz");
                     txtChargeRatioHigh.setText(String.valueOf(globalvar.getv40000(52))+"ms");
@@ -395,21 +395,21 @@ import android.widget.TextView;
         };
         
 	    public void InitlineViewA(){
-	        //Í¬ÑùÊÇĞèÒªÊı¾İdatasetºÍÊÓÍ¼äÖÈ¾Æ÷renderer
+	        //åŒæ ·æ˜¯éœ€è¦æ•°æ®datasetå’Œè§†å›¾æ¸²æŸ“å™¨renderer
 			mDatasetA=new XYMultipleSeriesDataset();
             mRendererA=new XYMultipleSeriesRenderer();
             if (globalvar.getv40000(15)==1||globalvar.getv40000(15)==2) {
-                secVoltageSeriesA = new XYSeries("¶ş´ÎµçÁ÷(0~200%)");
-                secCurrentSeriesA = new XYSeries("¶ş´ÎµçÑ¹(0~100kV)");
+                secVoltageSeriesA = new XYSeries("äºŒæ¬¡ç”µæµ(0~200%)");
+                secCurrentSeriesA = new XYSeries("äºŒæ¬¡ç”µå‹(0~100kV)");
                 for (int i = 0; i < 64; i++) {
                     secVoltageSeriesA.add((double) 40 / 63 * i, (double) globalvar.getv30000(40 + i));
                 }
                 for (int i = 0; i < 44; i++) {
                     secCurrentSeriesA.add((double) 40 / 43 * i, (double) globalvar.getv30000(104 + i) * 2);
                 }
-                mRendererA.setXTitle("(ms)");//ÉèÖÃÎªXÖáµÄ±êÌâ
-                mRendererA.setYTitle("(%/kV)");//ÉèÖÃyÖáµÄ±êÌâ
-                mRendererA.setChartTitle("  ");//ÉèÖÃÍ¼±í±êÌâ
+                mRendererA.setXTitle("(ms)");//è®¾ç½®ä¸ºXè½´çš„æ ‡é¢˜
+                mRendererA.setYTitle("(%/kV)");//è®¾ç½®yè½´çš„æ ‡é¢˜
+                mRendererA.setChartTitle("  ");//è®¾ç½®å›¾è¡¨æ ‡é¢˜
                 mRendererA.setYAxisMax(200);
                 mRendererA.addYTextLabel(0,"0 0");
                 mRendererA.addYTextLabel(20,"20 10");
@@ -424,21 +424,21 @@ import android.widget.TextView;
                 mRendererA.addYTextLabel(200,"200 100");
                 mRendererA.setXAxisMin(0);
                 mRendererA.setXAxisMax(20);
-                mRendererA.setPanLimits(new double[]{0, 20, 0, 200}); //ÉèÖÃÍÏ¶¯Ê±XÖáYÖáÔÊĞíµÄ×î´óÖµ×îĞ¡Öµ.
-                mRendererA.setZoomLimits(new double[]{0, 20, 0, 200});//ÉèÖÃ·Å´óËõĞ¡Ê±XÖáYÖáÔÊĞíµÄ×î´ó×îĞ¡Öµ.
+                mRendererA.setPanLimits(new double[]{0, 20, 0, 200}); //è®¾ç½®æ‹–åŠ¨æ—¶Xè½´Yè½´å…è®¸çš„æœ€å¤§å€¼æœ€å°å€¼.
+                mRendererA.setZoomLimits(new double[]{0, 20, 0, 200});//è®¾ç½®æ”¾å¤§ç¼©å°æ—¶Xè½´Yè½´å…è®¸çš„æœ€å¤§æœ€å°å€¼.
             }
             else{
-                secVoltageSeriesA = new XYSeries("¶ş´ÎµçÑ¹(0~100kV)");
-                secCurrentSeriesA = new XYSeries("¶ş´ÎµçÁ÷(0~500%)");
+                secVoltageSeriesA = new XYSeries("äºŒæ¬¡ç”µå‹(0~100kV)");
+                secCurrentSeriesA = new XYSeries("äºŒæ¬¡ç”µæµ(0~500%)");
                 for (int i = 0; i < 64; i++) {
                     secVoltageSeriesA.add((double) 100 / 63 * i, (double) globalvar.getv30000(40 + i) * 5);
                 }
                 for (int i = 0; i < 44; i++) {
                     secCurrentSeriesA.add((double) 100 / 43 * i, (double) globalvar.getv30000(104 + i));
                 }
-                mRendererA.setXTitle("(us)");//ÉèÖÃÎªXÖáµÄ±êÌâ
-                mRendererA.setYTitle("(kV/%)");//ÉèÖÃyÖáµÄ±êÌâ
-                mRendererA.setChartTitle("¶ş´ÎA×é²¨ĞÎ");//ÉèÖÃÍ¼±í±êÌâ
+                mRendererA.setXTitle("(us)");//è®¾ç½®ä¸ºXè½´çš„æ ‡é¢˜
+                mRendererA.setYTitle("(kV/%)");//è®¾ç½®yè½´çš„æ ‡é¢˜
+                mRendererA.setChartTitle("äºŒæ¬¡Aç»„æ³¢å½¢");//è®¾ç½®å›¾è¡¨æ ‡é¢˜
                 mRendererA.setYAxisMax(500);
                 mRendererA.addYTextLabel(0,"0 0");
                 mRendererA.addYTextLabel(50,"10 50");
@@ -453,135 +453,135 @@ import android.widget.TextView;
                 mRendererA.addYTextLabel(500,"100 500");
                 mRendererA.setXAxisMin(0);
                 mRendererA.setXAxisMax(50);
-                mRendererA.setPanLimits(new double[]{0, 50, 0, 500}); //ÉèÖÃÍÏ¶¯Ê±XÖáYÖáÔÊĞíµÄ×î´óÖµ×îĞ¡Öµ.
-                mRendererA.setZoomLimits(new double[]{0, 50, 0, 500});//ÉèÖÃ·Å´óËõĞ¡Ê±XÖáYÖáÔÊĞíµÄ×î´ó×îĞ¡Öµ.
+                mRendererA.setPanLimits(new double[]{0, 50, 0, 500}); //è®¾ç½®æ‹–åŠ¨æ—¶Xè½´Yè½´å…è®¸çš„æœ€å¤§å€¼æœ€å°å€¼.
+                mRendererA.setZoomLimits(new double[]{0, 50, 0, 500});//è®¾ç½®æ”¾å¤§ç¼©å°æ—¶Xè½´Yè½´å…è®¸çš„æœ€å¤§æœ€å°å€¼.
             }
             mDatasetA.addSeries(secVoltageSeriesA);
             mDatasetA.addSeries(secCurrentSeriesA);
-            //ÉèÖÃÍ¼±íµÄXÖáµÄµ±Ç°·½Ïò
+            //è®¾ç½®å›¾è¡¨çš„Xè½´çš„å½“å‰æ–¹å‘
             mRendererA.setOrientation(XYMultipleSeriesRenderer.Orientation.HORIZONTAL);
-            mRendererA.setAxisTitleTextSize(30);//ÉèÖÃÖá±êÌâÎÄ±¾´óĞ¡
-            mRendererA.setChartTitleTextSize(40);//ÉèÖÃÍ¼±í±êÌâÎÄ×ÖµÄ´óĞ¡
-            mRendererA.setLabelsTextSize(20);//ÉèÖÃ±êÇ©µÄÎÄ×Ö´óĞ¡
-            mRendererA.setLegendTextSize(20);//ÉèÖÃÍ¼ÀıÎÄ±¾´óĞ¡
+            mRendererA.setAxisTitleTextSize(30);//è®¾ç½®è½´æ ‡é¢˜æ–‡æœ¬å¤§å°
+            mRendererA.setChartTitleTextSize(40);//è®¾ç½®å›¾è¡¨æ ‡é¢˜æ–‡å­—çš„å¤§å°
+            mRendererA.setLabelsTextSize(20);//è®¾ç½®æ ‡ç­¾çš„æ–‡å­—å¤§å°
+            mRendererA.setLegendTextSize(20);//è®¾ç½®å›¾ä¾‹æ–‡æœ¬å¤§å°
             mRendererA.setLegendHeight(40);
-            mRendererA.setPointSize(5);//ÉèÖÃµãµÄ´óĞ¡
-            mRendererA.setYAxisMin(0);//ÉèÖÃyÖá×îĞ¡ÖµÊÇ0
-            mRendererA.setYLabels(11);//ÉèÖÃYÖá¿Ì¶È¸öÊı£¨Ã²ËÆ²»Ì«×¼È·£©
+            mRendererA.setPointSize(5);//è®¾ç½®ç‚¹çš„å¤§å°
+            mRendererA.setYAxisMin(0);//è®¾ç½®yè½´æœ€å°å€¼æ˜¯0
+            mRendererA.setYLabels(11);//è®¾ç½®Yè½´åˆ»åº¦ä¸ªæ•°ï¼ˆè²Œä¼¼ä¸å¤ªå‡†ç¡®ï¼‰
             mRendererA.setYLabelsAlign(Align.CENTER);
-	        mRendererA.setXLabels(11);//ÉèÖÃXÖá¿Ì¶È¸öÊı£¨Ã²ËÆ²»Ì«×¼È·£©
-	        mRendererA.setShowGrid(true);//ÏÔÊ¾Íø¸ñ
+	        mRendererA.setXLabels(11);//è®¾ç½®Xè½´åˆ»åº¦ä¸ªæ•°ï¼ˆè²Œä¼¼ä¸å¤ªå‡†ç¡®ï¼‰
+	        mRendererA.setShowGrid(true);//æ˜¾ç¤ºç½‘æ ¼
 	        mRendererA.setGridColor(Color.GRAY);
-	        mRendererA.setZoomButtonsVisible(false);//ÊÇ·ñÏÔÊ¾·Å´óËõĞ¡°´Å¥
-	        mRendererA.setMargins(new int[]{50,70,60,0});//ÉèÖÃÊÓÍ¼Î»ÖÃ
+	        mRendererA.setZoomButtonsVisible(false);//æ˜¯å¦æ˜¾ç¤ºæ”¾å¤§ç¼©å°æŒ‰é’®
+	        mRendererA.setMargins(new int[]{50,70,60,0});//è®¾ç½®è§†å›¾ä½ç½®
 	        
-			XYSeriesRenderer secVoltageR=new XYSeriesRenderer();//(ÀàËÆÓÚÒ»ÌõÏß¶ÔÏó)
-            secVoltageR.setColor(Color.GREEN);//ÉèÖÃÑÕÉ«
-            secVoltageR.setPointStyle(PointStyle.CIRCLE);//ÉèÖÃµãµÄÑùÊ½
-            secVoltageR.setFillPoints(true);//Ìî³äµã£¨ÏÔÊ¾µÄµãÊÇ¿ÕĞÄ»¹ÊÇÊµĞÄ£©
-            secVoltageR.setDisplayChartValues(false);//½«µãµÄÖµÏÔÊ¾³öÀ´
-            secVoltageR.setChartValuesSpacing(10);//ÏÔÊ¾µÄµãµÄÖµÓëÍ¼µÄ¾àÀë
-            secVoltageR.setChartValuesTextSize(25);//µãµÄÖµµÄÎÄ×Ö´óĞ¡
-            secVoltageR.setLineWidth(5);//ÉèÖÃÏß¿í
+			XYSeriesRenderer secVoltageR=new XYSeriesRenderer();//(ç±»ä¼¼äºä¸€æ¡çº¿å¯¹è±¡)
+            secVoltageR.setColor(Color.GREEN);//è®¾ç½®é¢œè‰²
+            secVoltageR.setPointStyle(PointStyle.CIRCLE);//è®¾ç½®ç‚¹çš„æ ·å¼
+            secVoltageR.setFillPoints(true);//å¡«å……ç‚¹ï¼ˆæ˜¾ç¤ºçš„ç‚¹æ˜¯ç©ºå¿ƒè¿˜æ˜¯å®å¿ƒï¼‰
+            secVoltageR.setDisplayChartValues(false);//å°†ç‚¹çš„å€¼æ˜¾ç¤ºå‡ºæ¥
+            secVoltageR.setChartValuesSpacing(10);//æ˜¾ç¤ºçš„ç‚¹çš„å€¼ä¸å›¾çš„è·ç¦»
+            secVoltageR.setChartValuesTextSize(25);//ç‚¹çš„å€¼çš„æ–‡å­—å¤§å°
+            secVoltageR.setLineWidth(5);//è®¾ç½®çº¿å®½
             mRendererA.addSeriesRenderer(secVoltageR);
 
-			XYSeriesRenderer secCurrentR=new XYSeriesRenderer();//(ÀàËÆÓÚÒ»ÌõÏß¶ÔÏó)
-            secCurrentR.setColor(Color.RED);//ÉèÖÃÑÕÉ«
-            secCurrentR.setPointStyle(PointStyle.CIRCLE);//ÉèÖÃµãµÄÑùÊ½
-            secCurrentR.setFillPoints(true);//Ìî³äµã£¨ÏÔÊ¾µÄµãÊÇ¿ÕĞÄ»¹ÊÇÊµĞÄ£©
-            secCurrentR.setDisplayChartValues(false);//½«µãµÄÖµÏÔÊ¾³öÀ´
-            secCurrentR.setChartValuesSpacing(10);//ÏÔÊ¾µÄµãµÄÖµÓëÍ¼µÄ¾àÀë
-            secCurrentR.setChartValuesTextSize(25);//µãµÄÖµµÄÎÄ×Ö´óĞ¡
-            secCurrentR.setLineWidth(5);//ÉèÖÃÏß¿í
+			XYSeriesRenderer secCurrentR=new XYSeriesRenderer();//(ç±»ä¼¼äºä¸€æ¡çº¿å¯¹è±¡)
+            secCurrentR.setColor(Color.RED);//è®¾ç½®é¢œè‰²
+            secCurrentR.setPointStyle(PointStyle.CIRCLE);//è®¾ç½®ç‚¹çš„æ ·å¼
+            secCurrentR.setFillPoints(true);//å¡«å……ç‚¹ï¼ˆæ˜¾ç¤ºçš„ç‚¹æ˜¯ç©ºå¿ƒè¿˜æ˜¯å®å¿ƒï¼‰
+            secCurrentR.setDisplayChartValues(false);//å°†ç‚¹çš„å€¼æ˜¾ç¤ºå‡ºæ¥
+            secCurrentR.setChartValuesSpacing(10);//æ˜¾ç¤ºçš„ç‚¹çš„å€¼ä¸å›¾çš„è·ç¦»
+            secCurrentR.setChartValuesTextSize(25);//ç‚¹çš„å€¼çš„æ–‡å­—å¤§å°
+            secCurrentR.setLineWidth(5);//è®¾ç½®çº¿å®½
             mRendererA.addSeriesRenderer(secCurrentR);
 	       
             GviewA=ChartFactory.getLineChartView(getActivity(),mDatasetA,mRendererA);
             GviewA.setBackgroundColor(Color.BLACK);
-	        //ÒÆ³ıÔ­ÓĞµÄLinearLayoutÖĞµÄÊÓÍ¼¿Ø¼ş
+	        //ç§»é™¤åŸæœ‰çš„LinearLayoutä¸­çš„è§†å›¾æ§ä»¶
 	        chartA.removeAllViewsInLayout();
 	        chartA.addView(GviewA);
 	    }
         
 	    public void InitlineViewB(){
-	        //Í¬ÑùÊÇĞèÒªÊı¾İdatasetºÍÊÓÍ¼äÖÈ¾Æ÷renderer
+	        //åŒæ ·æ˜¯éœ€è¦æ•°æ®datasetå’Œè§†å›¾æ¸²æŸ“å™¨renderer
 			mDatasetB=new XYMultipleSeriesDataset();
             mRendererB=new XYMultipleSeriesRenderer();
             if (globalvar.getv40000(15)==1||globalvar.getv40000(15)==2) {
-                secVoltageSeriesB = new XYSeries("¶ş´ÎµçÁ÷(0~200%)");
-                secCurrentSeriesB = new XYSeries("¶ş´ÎµçÑ¹(0~100kV)");
+                secVoltageSeriesB = new XYSeries("äºŒæ¬¡ç”µæµ(0~200%)");
+                secCurrentSeriesB = new XYSeries("äºŒæ¬¡ç”µå‹(0~100kV)");
                 for (int i = 0; i < 64; i++) {
                     secVoltageSeriesB.add((double) 40 / 63 * i, (double) globalvar.getv30000(40 + i));
                 }
                 for (int i = 0; i < 44; i++) {
                     secCurrentSeriesB.add((double) 40 / 43 * i, (double) globalvar.getv30000(104 + i) * 2);
                 }
-                mRendererB.setXTitle("(ms)");//ÉèÖÃÎªXÖáµÄ±êÌâ
-                mRendererB.setChartTitle("  ");//ÉèÖÃÍ¼±í±êÌâ
+                mRendererB.setXTitle("(ms)");//è®¾ç½®ä¸ºXè½´çš„æ ‡é¢˜
+                mRendererB.setChartTitle("  ");//è®¾ç½®å›¾è¡¨æ ‡é¢˜
                 mRendererB.setYAxisMax(200);
                 mRendererB.setXAxisMin(20);
                 mRendererB.setXAxisMax(40);
-                mRendererB.setPanLimits(new double[]{20, 40, 0, 200}); //ÉèÖÃÍÏ¶¯Ê±XÖáYÖáÔÊĞíµÄ×î´óÖµ×îĞ¡Öµ.
-                mRendererB.setZoomLimits(new double[]{20, 40, 0, 2000});//ÉèÖÃ·Å´óËõĞ¡Ê±XÖáYÖáÔÊĞíµÄ×î´ó×îĞ¡Öµ.
+                mRendererB.setPanLimits(new double[]{20, 40, 0, 200}); //è®¾ç½®æ‹–åŠ¨æ—¶Xè½´Yè½´å…è®¸çš„æœ€å¤§å€¼æœ€å°å€¼.
+                mRendererB.setZoomLimits(new double[]{20, 40, 0, 2000});//è®¾ç½®æ”¾å¤§ç¼©å°æ—¶Xè½´Yè½´å…è®¸çš„æœ€å¤§æœ€å°å€¼.
             }
             else{
-                secVoltageSeriesB = new XYSeries("¶ş´ÎµçÑ¹(0~100kV)");
-                secCurrentSeriesB = new XYSeries("¶ş´ÎµçÁ÷(0~500%)");
+                secVoltageSeriesB = new XYSeries("äºŒæ¬¡ç”µå‹(0~100kV)");
+                secCurrentSeriesB = new XYSeries("äºŒæ¬¡ç”µæµ(0~500%)");
                 for (int i = 0; i < 64; i++) {
                     secVoltageSeriesB.add((double) 100 / 63 * i, (double) globalvar.getv30000(40 + i) * 5);
                 }
                 for (int i = 0; i < 44; i++) {
                     secCurrentSeriesB.add((double) 100 / 43 * i, (double) globalvar.getv30000(104 + i));
                 }
-                mRendererB.setXTitle("(us)");//ÉèÖÃÎªXÖáµÄ±êÌâ
-                mRendererB.setChartTitle("¶ş´ÎB×é²¨ĞÎ");//ÉèÖÃÍ¼±í±êÌâ
+                mRendererB.setXTitle("(us)");//è®¾ç½®ä¸ºXè½´çš„æ ‡é¢˜
+                mRendererB.setChartTitle("äºŒæ¬¡Bç»„æ³¢å½¢");//è®¾ç½®å›¾è¡¨æ ‡é¢˜
                 mRendererB.setYAxisMax(500);
                 mRendererB.setXAxisMin(50);
                 mRendererB.setXAxisMax(100);
-                mRendererB.setPanLimits(new double[]{50, 100, 0, 500}); //ÉèÖÃÍÏ¶¯Ê±XÖáYÖáÔÊĞíµÄ×î´óÖµ×îĞ¡Öµ.
-                mRendererB.setZoomLimits(new double[]{50, 100, 0, 500});//ÉèÖÃ·Å´óËõĞ¡Ê±XÖáYÖáÔÊĞíµÄ×î´ó×îĞ¡Öµ.
+                mRendererB.setPanLimits(new double[]{50, 100, 0, 500}); //è®¾ç½®æ‹–åŠ¨æ—¶Xè½´Yè½´å…è®¸çš„æœ€å¤§å€¼æœ€å°å€¼.
+                mRendererB.setZoomLimits(new double[]{50, 100, 0, 500});//è®¾ç½®æ”¾å¤§ç¼©å°æ—¶Xè½´Yè½´å…è®¸çš„æœ€å¤§æœ€å°å€¼.
             }
             mDatasetB.addSeries(secVoltageSeriesB);
             mDatasetB.addSeries(secCurrentSeriesB);
-            //ÉèÖÃÍ¼±íµÄXÖáµÄµ±Ç°·½Ïò
+            //è®¾ç½®å›¾è¡¨çš„Xè½´çš„å½“å‰æ–¹å‘
             mRendererB.setOrientation(XYMultipleSeriesRenderer.Orientation.HORIZONTAL);
-            mRendererB.setAxisTitleTextSize(30);//ÉèÖÃÖá±êÌâÎÄ±¾´óĞ¡
-            mRendererB.setChartTitleTextSize(40);//ÉèÖÃÍ¼±í±êÌâÎÄ×ÖµÄ´óĞ¡
-            mRendererB.setLabelsTextSize(20);//ÉèÖÃ±êÇ©µÄÎÄ×Ö´óĞ¡
-            mRendererB.setLegendTextSize(20);//ÉèÖÃÍ¼ÀıÎÄ±¾´óĞ¡
+            mRendererB.setAxisTitleTextSize(30);//è®¾ç½®è½´æ ‡é¢˜æ–‡æœ¬å¤§å°
+            mRendererB.setChartTitleTextSize(40);//è®¾ç½®å›¾è¡¨æ ‡é¢˜æ–‡å­—çš„å¤§å°
+            mRendererB.setLabelsTextSize(20);//è®¾ç½®æ ‡ç­¾çš„æ–‡å­—å¤§å°
+            mRendererB.setLegendTextSize(20);//è®¾ç½®å›¾ä¾‹æ–‡æœ¬å¤§å°
             mRendererB.setLegendHeight(40);
-            mRendererB.setPointSize(5);//ÉèÖÃµãµÄ´óĞ¡
-            mRendererB.setYAxisMin(0);//ÉèÖÃyÖá×îĞ¡ÖµÊÇ0
-            mRendererB.setYLabels(11);//ÉèÖÃYÖá¿Ì¶È¸öÊı£¨Ã²ËÆ²»Ì«×¼È·£©
+            mRendererB.setPointSize(5);//è®¾ç½®ç‚¹çš„å¤§å°
+            mRendererB.setYAxisMin(0);//è®¾ç½®yè½´æœ€å°å€¼æ˜¯0
+            mRendererB.setYLabels(11);//è®¾ç½®Yè½´åˆ»åº¦ä¸ªæ•°ï¼ˆè²Œä¼¼ä¸å¤ªå‡†ç¡®ï¼‰
             mRendererB.setYLabelsAlign(Align.RIGHT);
-            mRendererB.setXLabels(11);//ÉèÖÃXÖá¿Ì¶È¸öÊı£¨Ã²ËÆ²»Ì«×¼È·£©
-	        mRendererB.setShowGrid(true);//ÏÔÊ¾Íø¸ñ
+            mRendererB.setXLabels(11);//è®¾ç½®Xè½´åˆ»åº¦ä¸ªæ•°ï¼ˆè²Œä¼¼ä¸å¤ªå‡†ç¡®ï¼‰
+	        mRendererB.setShowGrid(true);//æ˜¾ç¤ºç½‘æ ¼
 	        mRendererB.setGridColor(Color.GRAY);
-	        mRendererB.setZoomButtonsVisible(false);//ÊÇ·ñÏÔÊ¾·Å´óËõĞ¡°´Å¥
-	        mRendererB.setMargins(new int[]{50,0,60,70});//ÉèÖÃÊÓÍ¼Î»ÖÃ
+	        mRendererB.setZoomButtonsVisible(false);//æ˜¯å¦æ˜¾ç¤ºæ”¾å¤§ç¼©å°æŒ‰é’®
+	        mRendererB.setMargins(new int[]{50,0,60,70});//è®¾ç½®è§†å›¾ä½ç½®
 	        
-			XYSeriesRenderer secVoltageR=new XYSeriesRenderer();//(ÀàËÆÓÚÒ»ÌõÏß¶ÔÏó)
-            secVoltageR.setColor(Color.GREEN);//ÉèÖÃÑÕÉ«
-            secVoltageR.setPointStyle(PointStyle.CIRCLE);//ÉèÖÃµãµÄÑùÊ½
-            secVoltageR.setFillPoints(true);//Ìî³äµã£¨ÏÔÊ¾µÄµãÊÇ¿ÕĞÄ»¹ÊÇÊµĞÄ£©
-            secVoltageR.setDisplayChartValues(false);//½«µãµÄÖµÏÔÊ¾³öÀ´
-            secVoltageR.setChartValuesSpacing(10);//ÏÔÊ¾µÄµãµÄÖµÓëÍ¼µÄ¾àÀë
-            secVoltageR.setChartValuesTextSize(25);//µãµÄÖµµÄÎÄ×Ö´óĞ¡
-            secVoltageR.setLineWidth(5);//ÉèÖÃÏß¿í
+			XYSeriesRenderer secVoltageR=new XYSeriesRenderer();//(ç±»ä¼¼äºä¸€æ¡çº¿å¯¹è±¡)
+            secVoltageR.setColor(Color.GREEN);//è®¾ç½®é¢œè‰²
+            secVoltageR.setPointStyle(PointStyle.CIRCLE);//è®¾ç½®ç‚¹çš„æ ·å¼
+            secVoltageR.setFillPoints(true);//å¡«å……ç‚¹ï¼ˆæ˜¾ç¤ºçš„ç‚¹æ˜¯ç©ºå¿ƒè¿˜æ˜¯å®å¿ƒï¼‰
+            secVoltageR.setDisplayChartValues(false);//å°†ç‚¹çš„å€¼æ˜¾ç¤ºå‡ºæ¥
+            secVoltageR.setChartValuesSpacing(10);//æ˜¾ç¤ºçš„ç‚¹çš„å€¼ä¸å›¾çš„è·ç¦»
+            secVoltageR.setChartValuesTextSize(25);//ç‚¹çš„å€¼çš„æ–‡å­—å¤§å°
+            secVoltageR.setLineWidth(5);//è®¾ç½®çº¿å®½
             mRendererB.addSeriesRenderer(secVoltageR);
 
-			XYSeriesRenderer secCurrentR=new XYSeriesRenderer();//(ÀàËÆÓÚÒ»ÌõÏß¶ÔÏó)
-            secCurrentR.setColor(Color.RED);//ÉèÖÃÑÕÉ«
-            secCurrentR.setPointStyle(PointStyle.CIRCLE);//ÉèÖÃµãµÄÑùÊ½
-            secCurrentR.setFillPoints(true);//Ìî³äµã£¨ÏÔÊ¾µÄµãÊÇ¿ÕĞÄ»¹ÊÇÊµĞÄ£©
-            secCurrentR.setDisplayChartValues(false);//½«µãµÄÖµÏÔÊ¾³öÀ´
-            secCurrentR.setChartValuesSpacing(10);//ÏÔÊ¾µÄµãµÄÖµÓëÍ¼µÄ¾àÀë
-            secCurrentR.setChartValuesTextSize(25);//µãµÄÖµµÄÎÄ×Ö´óĞ¡
-            secCurrentR.setLineWidth(5);//ÉèÖÃÏß¿í
+			XYSeriesRenderer secCurrentR=new XYSeriesRenderer();//(ç±»ä¼¼äºä¸€æ¡çº¿å¯¹è±¡)
+            secCurrentR.setColor(Color.RED);//è®¾ç½®é¢œè‰²
+            secCurrentR.setPointStyle(PointStyle.CIRCLE);//è®¾ç½®ç‚¹çš„æ ·å¼
+            secCurrentR.setFillPoints(true);//å¡«å……ç‚¹ï¼ˆæ˜¾ç¤ºçš„ç‚¹æ˜¯ç©ºå¿ƒè¿˜æ˜¯å®å¿ƒï¼‰
+            secCurrentR.setDisplayChartValues(false);//å°†ç‚¹çš„å€¼æ˜¾ç¤ºå‡ºæ¥
+            secCurrentR.setChartValuesSpacing(10);//æ˜¾ç¤ºçš„ç‚¹çš„å€¼ä¸å›¾çš„è·ç¦»
+            secCurrentR.setChartValuesTextSize(25);//ç‚¹çš„å€¼çš„æ–‡å­—å¤§å°
+            secCurrentR.setLineWidth(5);//è®¾ç½®çº¿å®½
             mRendererB.addSeriesRenderer(secCurrentR);
 	       
             GviewB=ChartFactory.getLineChartView(getActivity(),mDatasetB,mRendererB);
             GviewB.setBackgroundColor(Color.BLACK);
-	        //ÒÆ³ıÔ­ÓĞµÄLinearLayoutÖĞµÄÊÓÍ¼¿Ø¼ş
+	        //ç§»é™¤åŸæœ‰çš„LinearLayoutä¸­çš„è§†å›¾æ§ä»¶
 	        chartB.removeAllViewsInLayout();
 	        chartB.addView(GviewB);
 	    }

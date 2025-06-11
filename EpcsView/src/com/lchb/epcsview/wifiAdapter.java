@@ -15,8 +15,8 @@ import android.widget.TextView;
 
 public class wifiAdapter extends BaseAdapter {  
 	  
-    private List<ScanResult> wifilist; //Êı¾İ  
-    private int resource;   //itemµÄ²¼¾Ö  
+    private List<ScanResult> wifilist; //æ•°æ®  
+    private int resource;   //itemçš„å¸ƒå±€  
     private Context context;  
     private LayoutInflater inflator;  
     private TextView wifiTextView;  
@@ -24,8 +24,8 @@ public class wifiAdapter extends BaseAdapter {
     /** 
      *  
      * @param context mainActivity 
-     * @param persons   ÏÔÊ¾µÄÊı¾İ 
-     * @param resource  Ò»¸öItemµÄ²¼¾Ö 
+     * @param persons   æ˜¾ç¤ºçš„æ•°æ® 
+     * @param resource  ä¸€ä¸ªItemçš„å¸ƒå±€ 
      */  
     public wifiAdapter(Context context,List<ScanResult>wifilist,int resource){  
         this.context = context;
@@ -39,29 +39,29 @@ public class wifiAdapter extends BaseAdapter {
     }
     
     /* 
-     * »ñµÃÊı¾İ×ÜÊı 
+     * è·å¾—æ•°æ®æ€»æ•° 
      * */  
     @Override  
     public int getCount() {  
         return wifilist.size();
     }  
     /* 
-     * ¸ù¾İË÷ÒıÎªpositionµÄÊı¾İ 
+     * æ ¹æ®ç´¢å¼•ä¸ºpositionçš„æ•°æ® 
      * */  
     @Override  
     public Object getItem(int position) {  
         return wifilist.get(position);
     }  
     /* 
-     * ¸ù¾İË÷ÒıÖµ»ñµÃItemµÄId 
+     * æ ¹æ®ç´¢å¼•å€¼è·å¾—Itemçš„Id 
      * */  
     @Override  
     public long getItemId(int position) {
         return position;
     }  
     /* 
-     *Í¨¹ıË÷ÒıÖµposition½«Êı¾İÓ³Éäµ½ÊÓÍ¼ 
-     *convertView¾ßÓĞ»º´æ¹¦ÄÜ£¬ÔÚµÚÒ»Ò³Ê±Îªnull£¬ÔÚµÚ¶şµÚÈı....Ò³Ê±²»Îªnull 
+     *é€šè¿‡ç´¢å¼•å€¼positionå°†æ•°æ®æ˜ å°„åˆ°è§†å›¾ 
+     *convertViewå…·æœ‰ç¼“å­˜åŠŸèƒ½ï¼Œåœ¨ç¬¬ä¸€é¡µæ—¶ä¸ºnullï¼Œåœ¨ç¬¬äºŒç¬¬ä¸‰....é¡µæ—¶ä¸ä¸ºnull 
      * */  
     @Override  
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -112,8 +112,8 @@ public class wifiAdapter extends BaseAdapter {
     	//int networkID = info.getNetworkId();
     	//int speed = info.getLinkSpeed();
     	return ssid;
-    	/*return "mac£º" + maxText + "\n\r"
-    	+ "ip£º" + ipText + "\n\r"
+    	/*return "macï¼š" + maxText + "\n\r"
+    	+ "ipï¼š" + ipText + "\n\r"
     	+ "wifi status :" + status + "\n\r"
     	+ "ssid :" + ssid + "\n\r"
     	+ "net work id :" + networkID + "\n\r"

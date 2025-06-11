@@ -25,8 +25,8 @@ import android.widget.TextView;
 
 public class datelistAdapter extends BaseAdapter {  
 	  
-    private List<txtItemType[]> datelist; //Êı¾İ  
-    private int resource;   //itemµÄ²¼¾Ö  
+    private List<txtItemType[]> datelist; //æ•°æ®  
+    private int resource;   //itemçš„å¸ƒå±€  
     private Context context;
     private LayoutInflater inflator;
     private Handler mHandler;
@@ -36,8 +36,8 @@ public class datelistAdapter extends BaseAdapter {
     /** 
      *  
      * @param context mainActivity
-     * @param persons   ÏÔÊ¾µÄÊı¾İ 
-     * @param resource  Ò»¸öItemµÄ²¼¾Ö 
+     * @param persons   æ˜¾ç¤ºçš„æ•°æ® 
+     * @param resource  ä¸€ä¸ªItemçš„å¸ƒå±€ 
      */  
     public datelistAdapter(Context context,List<txtItemType[]> datelist,int resource,Handler mHandler){
     	this.context=context;
@@ -53,7 +53,7 @@ public class datelistAdapter extends BaseAdapter {
     }
     
     /* 
-     * »ñµÃÊı¾İ×ÜÊı 
+     * è·å¾—æ•°æ®æ€»æ•° 
      * */  
     @Override  
     public int getCount() {
@@ -62,22 +62,22 @@ public class datelistAdapter extends BaseAdapter {
         return size;
     }  
     /* 
-     * ¸ù¾İË÷ÒıÎªpositionµÄÊı¾İ 
+     * æ ¹æ®ç´¢å¼•ä¸ºpositionçš„æ•°æ® 
      * */  
     @Override  
     public Object getItem(int position) {
         return datelist.get(position);
     }  
     /* 
-     * ¸ù¾İË÷ÒıÖµ»ñµÃItemµÄId 
+     * æ ¹æ®ç´¢å¼•å€¼è·å¾—Itemçš„Id 
      * */  
     @Override  
     public long getItemId(int position) {
         return position;
     }  
     /*
-     *Í¨¹ıË÷ÒıÖµposition½«Êı¾İÓ³Éäµ½ÊÓÍ¼ 
-     *convertView¾ßÓĞ»º´æ¹¦ÄÜ£¬ÔÚµÚÒ»Ò³Ê±Îªnull£¬ÔÚµÚ¶şµÚÈı....Ò³Ê±²»Îªnull 
+     *é€šè¿‡ç´¢å¼•å€¼positionå°†æ•°æ®æ˜ å°„åˆ°è§†å›¾ 
+     *convertViewå…·æœ‰ç¼“å­˜åŠŸèƒ½ï¼Œåœ¨ç¬¬ä¸€é¡µæ—¶ä¸ºnullï¼Œåœ¨ç¬¬äºŒç¬¬ä¸‰....é¡µæ—¶ä¸ä¸ºnull 
      * */  
     
     @Override  
@@ -145,16 +145,16 @@ public class datelistAdapter extends BaseAdapter {
 						if (item.getindex()==8&&item.isWrite&&pos==0){
 							v.setBackgroundColor(Color.CYAN);
 					        new AlertDialog.Builder(context)
-							.setTitle("µ¥Âö³å²âÊÔ")
+							.setTitle("å•è„‰å†²æµ‹è¯•")
 							.setMessage(item.getTitle())
 							.setCancelable(false)
-							.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() { 
+							.setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() { 
 							    @Override 
 							    public void onClick(DialogInterface dialog, int which) {
 							    	new mbWriteThread(context, mHandler, 0, item.getindex()-1, 1).start();
 							    } 
 							})
-							.setNegativeButton("È¡Ïû", null).show();
+							.setNegativeButton("å–æ¶ˆ", null).show();
 						}
 						else if (item.getindex()==15&&item.isWrite){
 							v.setBackgroundColor(Color.CYAN);
@@ -167,11 +167,11 @@ public class datelistAdapter extends BaseAdapter {
 					        rbtnsbType[3]=(RadioButton)view.findViewById(R.id.rbtnHf);
 				        	rbtnsbType[v40000[item.getindex()]].setChecked(true);
 					        new AlertDialog.Builder(context)
-							.setTitle("ĞŞ¸Ä²ÎÊı")
+							.setTitle("ä¿®æ”¹å‚æ•°")
 							.setMessage(item.getTitle())
 							.setView(view)
 							.setCancelable(false)
-							.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() { 
+							.setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() { 
 							    @Override 
 							    public void onClick(DialogInterface dialog, int which) {
 							    	int j=0;
@@ -182,7 +182,7 @@ public class datelistAdapter extends BaseAdapter {
 							    	new mbWriteThread(context, mHandler, 1, item.getindex()-1, j).start();
 							    } 
 							})
-							.setNegativeButton("È¡Ïû", null).show();
+							.setNegativeButton("å–æ¶ˆ", null).show();
 						}
 						else if (item.getindex()==16&&item.isWrite){
 							v.setBackgroundColor(Color.CYAN);
@@ -193,11 +193,11 @@ public class datelistAdapter extends BaseAdapter {
 					        rbtnDcsType[1]=(RadioButton)view.findViewById(R.id.rbtnDcsCtrl);
 					        rbtnDcsType[v40000[item.getindex()]].setChecked(true);
 					        new AlertDialog.Builder(context)
-							.setTitle("ĞŞ¸Ä²ÎÊı")
+							.setTitle("ä¿®æ”¹å‚æ•°")
 							.setMessage(item.getTitle())
 							.setView(view)
 							.setCancelable(false)
-							.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() { 
+							.setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() { 
 							    @Override 
 							    public void onClick(DialogInterface dialog, int which) {
 							    	int j = 0;
@@ -208,7 +208,7 @@ public class datelistAdapter extends BaseAdapter {
 							    	new mbWriteThread(context, mHandler, 1, item.getindex()-1, j).start();
 							    }
 							})
-							.setNegativeButton("È¡Ïû", null).show();
+							.setNegativeButton("å–æ¶ˆ", null).show();
 						}
 						else if(item.getindex()!=0&&item.isWrite){
 							v.setBackgroundColor(Color.CYAN);
@@ -219,11 +219,11 @@ public class datelistAdapter extends BaseAdapter {
 			        		input.setText(String.valueOf(v40000[item.getindex()]));
 			        		input.setSelectAllOnFocus(true);
 							new AlertDialog.Builder(context)
-							.setTitle("ĞŞ¸Ä²ÎÊı")
+							.setTitle("ä¿®æ”¹å‚æ•°")
 							.setMessage(item.getTitle())
 							.setView(input)
 							.setCancelable(false)
-							.setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() { 
+							.setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() { 
 							    @Override 
 							    public void onClick(DialogInterface dialog, int which) {
 							    	if (input.getText().toString().equals("")){}
@@ -231,7 +231,7 @@ public class datelistAdapter extends BaseAdapter {
 							    		new mbWriteThread(context, mHandler, 1, item.getindex()-1, Integer.parseInt(input.getText().toString())).start();
 							    } 
 							})
-							.setNegativeButton("È¡Ïû", null).show();
+							.setNegativeButton("å–æ¶ˆ", null).show();
 			        		Message msg = mHandler.obtainMessage();
 			        		msg.what = POPKEYBORAD;
 			        		msg.sendToTarget();
@@ -252,7 +252,7 @@ public class datelistAdapter extends BaseAdapter {
     }
     
     /**
-     * ListViewµ¥Ìõ¸üĞÂ
+     * ListViewå•æ¡æ›´æ–°
      * @param menu
      */
     private void updateSingleRow(List<txtItemType[]> list){
@@ -272,7 +272,7 @@ public class datelistAdapter extends BaseAdapter {
     }
     
     /**
-     * ½ÓÊÕÏûÏ¢Í¨Öª£¬¸üĞÂ½çÃæ
+     * æ¥æ”¶æ¶ˆæ¯é€šçŸ¥ï¼Œæ›´æ–°ç•Œé¢
      */
 	@SuppressLint("HandlerLeak")
 	@SuppressWarnings("unchecked")

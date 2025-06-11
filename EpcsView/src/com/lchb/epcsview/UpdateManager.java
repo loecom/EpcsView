@@ -36,7 +36,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
- * Created by Å©·ò on 2014/8/4.
+ * Created by å†œå¤« on 2014/8/4.
  */
 public class UpdateManager {
     public ProgressDialog pBar;
@@ -55,7 +55,7 @@ public class UpdateManager {
     }
 
     /**
-     * ¼ì²âÈí¼ş¸üĞÂ
+     * æ£€æµ‹è½¯ä»¶æ›´æ–°
      */
     public void checkUpdate(){
         new GetServerVerCode().execute();
@@ -102,16 +102,16 @@ public class UpdateManager {
         int verCode = getVerCode();
         String verName = getVerName();
         StringBuffer sb = new StringBuffer();
-        sb.append("µ±Ç°°æ±¾:");
+        sb.append("å½“å‰ç‰ˆæœ¬:");
         sb.append(verName);
         //sb.append(" Code:");
         //sb.append(verCode);
-        sb.append(",\nÒÑÊÇ×îĞÂ°æ,ÎŞĞè¸üĞÂ!");
+        sb.append(",\nå·²æ˜¯æœ€æ–°ç‰ˆ,æ— éœ€æ›´æ–°!");
         Dialog dialog = new AlertDialog.Builder(context)
-                .setTitle("Èí¼ş¸üĞÂ").setMessage(sb.toString())// ÉèÖÃÄÚÈİ
+                .setTitle("è½¯ä»¶æ›´æ–°").setMessage(sb.toString())// è®¾ç½®å†…å®¹
                 .setCancelable(false)
-                .setPositiveButton("È·¶¨", null).create();// ´´½¨
-        // ÏÔÊ¾¶Ô»°¿ò
+                .setPositiveButton("ç¡®å®š", null).create();// åˆ›å»º
+        // æ˜¾ç¤ºå¯¹è¯æ¡†
         dialog.show();
     }
 
@@ -119,34 +119,34 @@ public class UpdateManager {
         int verCode = getVerCode();
         String verName = getVerName();
         StringBuffer sb = new StringBuffer();
-        sb.append("µ±Ç°°æ±¾:");
+        sb.append("å½“å‰ç‰ˆæœ¬:");
         sb.append(verName);
         //sb.append(" Code:");
         //sb.append(verCode);
-        sb.append(", ·¢ÏÖĞÂ°æ±¾:");
+        sb.append(", å‘ç°æ–°ç‰ˆæœ¬:");
         sb.append(newVerName);
         //sb.append(" Code:");
         //sb.append(newVerCode);
-        sb.append(", ÊÇ·ñ¸üĞÂ?");
+        sb.append(", æ˜¯å¦æ›´æ–°?");
         Dialog dialog = new AlertDialog.Builder(context)
-                .setTitle("Èí¼ş¸üĞÂ")
+                .setTitle("è½¯ä»¶æ›´æ–°")
                 .setMessage(sb.toString())
                 .setCancelable(false)
-                        // ÉèÖÃÄÚÈİ
-                .setPositiveButton("¸üĞÂ",// ÉèÖÃÈ·¶¨°´Å¥
+                        // è®¾ç½®å†…å®¹
+                .setPositiveButton("æ›´æ–°",// è®¾ç½®ç¡®å®šæŒ‰é’®
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog,int which) {
                                 pBar = new ProgressDialog(context);
-                                pBar.setTitle("ÕıÔÚÏÂÔØ");
-                                pBar.setMessage("ÇëÉÔºò...");
+                                pBar.setTitle("æ­£åœ¨ä¸‹è½½");
+                                pBar.setMessage("è¯·ç¨å€™...");
                                 pBar.setCancelable(false);
                                 pBar.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                                 downFile(UPDATE_SERVER + UPDATE_APKNAME);
                             }
                         })
-                .setNegativeButton("Ôİ²»¸üĞÂ",null).create();// ´´½¨
-        // ÏÔÊ¾¶Ô»°¿ò
+                .setNegativeButton("æš‚ä¸æ›´æ–°",null).create();// åˆ›å»º
+        // æ˜¾ç¤ºå¯¹è¯æ¡†
         dialog.show();
     }
 
@@ -210,7 +210,7 @@ public class UpdateManager {
         StringBuilder sb = new StringBuilder();
         HttpClient client = new DefaultHttpClient();
         HttpParams httpParams = client.getParams();
-        //ÉèÖÃÍøÂç³¬Ê±²ÎÊı
+        //è®¾ç½®ç½‘ç»œè¶…æ—¶å‚æ•°
         HttpConnectionParams.setConnectionTimeout(httpParams, 3000);
         HttpConnectionParams.setSoTimeout(httpParams, 5000);
         HttpGet httpGet=new HttpGet(url);

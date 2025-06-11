@@ -2,14 +2,14 @@ package com.lchb.epcsview;
 
 public class udpcmdtype{
 	public String command;
-	public byte cmd;		//0-É¨Ãè,1-ĞŞ¸Ä
+	public byte cmd;		//0-æ‰«æ,1-ä¿®æ”¹
 	public byte dat;		//0
-	public short sbh;		//Éè±¸ºÅ
-	public short luh;		//Â¯ºÅ
-	public short cuh;		//³ı³¾Æ÷ºÅ
-	public short tdh;		//Í¨µÀºÅ
-	public short dch;		//µç³¡ºÅ
-	public short can;		//CANµØÖ·
+	public short sbh;		//è®¾å¤‡å·
+	public short luh;		//ç‚‰å·
+	public short cuh;		//é™¤å°˜å™¨å·
+	public short tdh;		//é€šé“å·
+	public short dch;		//ç”µåœºå·
+	public short can;		//CANåœ°å€
 	public short ip1;
 	public short ip2;
 	public short ip3;
@@ -18,7 +18,7 @@ public class udpcmdtype{
 	public short mask2;
 	public short mask3;
 	public short mask4;
-	public short sbType;	//µ¥Ïà,ÈıÏà,¸ßÆµ
+	public short sbType;	//å•ç›¸,ä¸‰ç›¸,é«˜é¢‘
 	public byte macadr1;
 	public byte macadr2;
 	public byte macadr3;
@@ -122,9 +122,9 @@ public class udpcmdtype{
     }
 
 	/**
-     * ½«intÀàĞÍµÄÊı¾İ×ª»»ÎªbyteÊı×é
-     * @param n intÊı¾İ
-     * @return Éú³ÉµÄbyteÊı×é
+     * å°†intç±»å‹çš„æ•°æ®è½¬æ¢ä¸ºbyteæ•°ç»„
+     * @param n intæ•°æ®
+     * @return ç”Ÿæˆçš„byteæ•°ç»„
      */
     public byte[] shortToBytes(short s, boolean bBigEnding) {
     	byte[] buf = new byte[2];
@@ -142,9 +142,9 @@ public class udpcmdtype{
     }
     
     /**
-     * ½«byteÊı×é×ª»»ÎªintÊı¾İ
-     * @param b ×Ö½ÚÊı×é
-     * @return Éú³ÉµÄintÊı¾İ
+     * å°†byteæ•°ç»„è½¬æ¢ä¸ºintæ•°æ®
+     * @param b å­—èŠ‚æ•°ç»„
+     * @return ç”Ÿæˆçš„intæ•°æ®
      */
 	public short bytesToshort(byte bufa, byte bufb, boolean bBigEnding){
 		short r = 0;
