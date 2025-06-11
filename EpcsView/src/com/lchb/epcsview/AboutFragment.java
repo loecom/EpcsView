@@ -49,10 +49,10 @@ import android.widget.TextView;
 				PackageManager manager = getActivity().getPackageManager();
 				PackageInfo info = manager.getPackageInfo(getActivity().getPackageName(), 0);
 				String version = info.versionName;
-				return " 汾  :V"+version;
+				return "版本号:V"+version;
 			} catch (Exception e) {
 				e.printStackTrace();
-				return " 汾  :V1.0";
+				return "版本号:V1.0";
 			}
 		}
 				
